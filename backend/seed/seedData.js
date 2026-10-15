@@ -29,752 +29,2094 @@ export const seedUsers = [
 ];
 
 export const seedResources = [
-
-  // ─────────────────────────────────────────────
-  // HTML AND CSS — A to Z
-  // ─────────────────────────────────────────────
-  {
-    title: 'MDN Web Docs: HTML & CSS Learning Guide',
-    description: 'The definitive open-source documentation and interactive learning guide for HTML, CSS, JavaScript, and modern Web APIs maintained by Mozilla. Covers semantic HTML5 elements, form validation, flexbox, grid, animations, CSS custom properties, and web accessibility from absolute beginner to advanced.',
-    category: 'HTML and CSS',
-    resourceType: 'Documentation',
-    url: 'https://developer.mozilla.org/en-US/docs/Learn',
-    thumbnail: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80',
-    tags: ['mdn', 'html5', 'css3', 'web apis', 'standards', 'semantic'],
-    difficulty: 'Beginner',
-    isFeatured: true,
-  },
-  {
-    title: 'freeCodeCamp: Responsive Web Design Certification',
-    description: 'Learn modern HTML5, CSS3, Flexbox, CSS Grid, media queries, accessibility principles, and responsive design patterns by building 5 real-world certified projects. Covers form elements, tables, ARIA roles, and CSS animations step by step. Completely free with certification.',
-    category: 'HTML and CSS',
-    resourceType: 'Course',
-    url: 'https://www.freecodecamp.org/learn/2022/responsive-web-design/',
-    thumbnail: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80',
-    tags: ['freecodecamp', 'html5', 'css3', 'flexbox', 'grid', 'responsive'],
-    difficulty: 'Beginner',
-    isFeatured: true,
-  },
-  {
-    title: 'CSS-Tricks: Complete Flexbox & Grid Guide',
-    description: 'The most comprehensive visual reference guide to CSS Flexbox and CSS Grid on the internet. Every property documented with beautiful interactive diagrams — flex-direction, justify-content, align-items, grid-template-columns, grid-area, auto-placement, and real-world layout examples.',
-    category: 'HTML and CSS',
-    resourceType: 'Article',
-    url: 'https://css-tricks.com/snippets/css/a-guide-to-flexbox/',
-    thumbnail: 'https://images.unsplash.com/photo-1545670723-196ed0954986?auto=format&fit=crop&w=800&q=80',
-    tags: ['flexbox', 'css grid', 'layout', 'alignment', 'css-tricks', 'responsive'],
-    difficulty: 'Beginner',
-    isFeatured: false,
-  },
-  {
-    title: 'Kevin Powell: CSS for Beginners (YouTube)',
-    description: 'Kevin Powell is widely regarded as the CSS king of YouTube. His free playlist covers CSS selectors, specificity, the box model, positioning, pseudo-elements, CSS variables, media queries, animations, transitions, and modern layout techniques like grid and flexbox in an engaging, practical style.',
-    category: 'HTML and CSS',
-    resourceType: 'Video',
-    url: 'https://www.youtube.com/@KevinPowell',
-    thumbnail: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80',
-    tags: ['css', 'kevin powell', 'youtube', 'animations', 'variables', 'layout'],
-    difficulty: 'Beginner',
-    isFeatured: true,
-  },
-  {
-    title: 'W3Schools HTML & CSS Interactive Reference',
-    description: 'Comprehensive reference and interactive practice environment for all HTML tags and CSS properties. Includes try-it editors, color pickers, quizzes, and exercises covering HTML5 semantic elements, CSS3 transitions, Bootstrap, and responsive breakpoints. Perfect quick-reference for developers.',
-    category: 'HTML and CSS',
-    resourceType: 'Interactive Tool',
-    url: 'https://www.w3schools.com/html/',
-    thumbnail: 'https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=800&q=80',
-    tags: ['w3schools', 'html', 'css', 'interactive', 'reference', 'exercises'],
-    difficulty: 'Beginner',
-    isFeatured: false,
-  },
-  {
-    title: 'HTML5 & CSS3 Design Patterns – Smashing Magazine',
-    description: 'Collection of advanced CSS techniques and HTML5 patterns from Smashing Magazine covering CSS custom properties (variables), container queries, cascade layers, CSS animations with keyframes, blend modes, clip-path shapes, scroll-driven animations, and modern browser feature detection.',
-    category: 'HTML and CSS',
-    resourceType: 'Article',
-    url: 'https://www.smashingmagazine.com/category/css/',
-    thumbnail: 'https://images.unsplash.com/photo-1621839673705-6617adf9e890?auto=format&fit=crop&w=800&q=80',
-    tags: ['css', 'html5', 'animations', 'container queries', 'cascade layers', 'advanced'],
-    difficulty: 'Intermediate',
-    isFeatured: false,
-  },
-  {
-    title: 'The HTML & CSS Cheatsheet – Beginner to Advanced',
-    description: 'A beautifully designed, printable cheatsheet covering every HTML5 tag, CSS3 property, flexbox properties, grid properties, CSS selectors (pseudo-classes, pseudo-elements), CSS units (rem, em, vh, vw), media query breakpoints, and common CSS patterns used in production.',
-    category: 'HTML and CSS',
-    resourceType: 'Cheatsheet',
-    url: 'https://htmlcheatsheet.com/',
-    thumbnail: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80',
-    tags: ['html', 'css', 'cheatsheet', 'reference', 'selectors', 'units'],
-    difficulty: 'All Levels',
-    isFeatured: false,
-  },
-
-  // ─────────────────────────────────────────────
-  // JAVASCRIPT — A to Z
-  // ─────────────────────────────────────────────
-  {
-    title: 'The Modern JavaScript Tutorial (javascript.info)',
-    description: 'From the very basics to advanced topics with simple, detailed explanations and interactive examples. Covers closures, prototypes, promises, async/await, generators, iterators, DOM manipulation, events, fetch API, browser storage, ES2024 features, and the V8 engine internals.',
-    category: 'JavaScript',
-    resourceType: 'Book',
-    url: 'https://javascript.info/',
-    thumbnail: 'https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?auto=format&fit=crop&w=800&q=80',
-    tags: ['javascript', 'es6', 'async', 'promises', 'core', 'dom'],
-    difficulty: 'Intermediate',
-    isFeatured: true,
-  },
-  {
-    title: 'Eloquent JavaScript – Free Online Book',
-    description: 'A modern introduction to programming and JavaScript by Marijn Haverbeke. Covers variables, functions, data structures, higher-order functions, OOP, asynchronous programming, Node.js, and browser features with challenging exercises and complete project walkthroughs.',
-    category: 'JavaScript',
-    resourceType: 'Book',
-    url: 'https://eloquentjavascript.net/',
-    thumbnail: 'https://images.unsplash.com/photo-1555099962-4199c345e5dd?auto=format&fit=crop&w=800&q=80',
-    tags: ['javascript', 'oop', 'functional', 'node', 'book', 'haverbeke'],
-    difficulty: 'Intermediate',
-    isFeatured: false,
-  },
-  {
-    title: 'freeCodeCamp: JavaScript Algorithms & Data Structures',
-    description: 'A comprehensive 300-hour free certification covering JavaScript basics, ES6+, regular expressions, debugging, data structures, OOP, functional programming, and algorithm scripting challenges. Ideal for solidifying JS fundamentals before moving to frameworks.',
-    category: 'JavaScript',
-    resourceType: 'Course',
-    url: 'https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/',
-    thumbnail: 'https://images.unsplash.com/photo-1516116216624-53e697fedbea?auto=format&fit=crop&w=800&q=80',
-    tags: ['javascript', 'algorithms', 'freecodecamp', 'es6', 'oop', 'functional'],
-    difficulty: 'Beginner',
-    isFeatured: false,
-  },
-  {
-    title: "You Don't Know JS (YDKJS) – Free Book Series",
-    description: "Kyle Simpson's acclaimed 6-book series diving deep into the core mechanisms of JavaScript — scope and closures, this and object prototypes, types and grammar, async and performance, ES6 and beyond. Available completely free on GitHub with zero fluff.",
-    category: 'JavaScript',
-    resourceType: 'Book',
-    url: 'https://github.com/getify/You-Dont-Know-JS',
-    thumbnail: 'https://images.unsplash.com/photo-1623479322729-28b25c16b011?auto=format&fit=crop&w=800&q=80',
-    tags: ['javascript', 'advanced', 'closures', 'prototypes', 'ydkjs', 'es6'],
-    difficulty: 'Advanced',
-    isFeatured: true,
-  },
-  {
-    title: 'JavaScript30 by Wes Bos – 30 Vanilla JS Projects',
-    description: 'Build 30 things in 30 days with 30 tutorials using pure vanilla JavaScript — no frameworks, no compilers, no libraries, no boilerplate. Projects include a drum kit, CSS variables controller, speech recognition, video player, canvas drawing, Whack-a-Mole, and more.',
-    category: 'JavaScript',
-    resourceType: 'Course',
-    url: 'https://javascript30.com/',
-    thumbnail: 'https://images.unsplash.com/photo-1518773553398-650c184e0bb3?auto=format&fit=crop&w=800&q=80',
-    tags: ['javascript', 'vanilla', 'projects', 'dom', 'wes bos', 'practical'],
-    difficulty: 'Intermediate',
-    isFeatured: true,
-  },
-  {
-    title: 'JavaScript: Understanding the Weird Parts (Udemy)',
-    description: "Tony Alicea's legendary Udemy course explaining the execution context, the call stack, hoisting, closures, prototype chain, the 'this' keyword, IIFE patterns, event loops, and JavaScript design patterns deeply. Essential for going from intermediate to truly advanced JS.",
-    category: 'JavaScript',
-    resourceType: 'Course',
-    url: 'https://www.udemy.com/course/understand-javascript/',
-    thumbnail: 'https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=800&q=80',
-    tags: ['javascript', 'advanced', 'execution context', 'closures', 'prototype', 'udemy'],
-    difficulty: 'Advanced',
-    isFeatured: false,
-  },
-
-  // ─────────────────────────────────────────────
-  // REACT JS — A to Z
-  // ─────────────────────────────────────────────
-  {
-    title: 'React Official Documentation & Interactive Tutorials',
-    description: 'The redesigned official React documentation featuring interactive sandboxes, deep dives into state preservation, effects, custom hooks, context, reducers, refs, portals, error boundaries, Suspense, and React Server Components. The single best starting point for React.',
-    category: 'React JS',
-    resourceType: 'Documentation',
-    url: 'https://react.dev/learn',
-    thumbnail: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=800&q=80',
-    tags: ['react', 'hooks', 'virtual dom', 'frontend', 'components', 'suspense'],
-    difficulty: 'Beginner',
-    isFeatured: true,
-  },
-  {
-    title: 'Full Stack Open – React & Redux Deep Dive',
-    description: "University of Helsinki's world-class free course. Parts 1–5 cover React fundamentals, hooks, component state, REST APIs, testing with React Testing Library, Redux Toolkit, React Router v6, and custom hooks with real, graded project exercises.",
-    category: 'React JS',
-    resourceType: 'Course',
-    url: 'https://fullstackopen.com/en/part1',
-    thumbnail: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80',
-    tags: ['react', 'redux', 'hooks', 'testing', 'router', 'helsinki'],
-    difficulty: 'Intermediate',
-    isFeatured: true,
-  },
-  {
-    title: 'Scrimba: Learn React for Free – Interactive Course',
-    description: "An interactive React course on Scrimba's unique coding environment where you can edit code directly inside the video. Covers JSX, props, state, event handling, useEffect, useRef, fetching data from APIs, conditional rendering, and form handling.",
-    category: 'React JS',
-    resourceType: 'Interactive Tool',
-    url: 'https://scrimba.com/learn-react-c0e',
-    thumbnail: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80',
-    tags: ['react', 'scrimba', 'interactive', 'jsx', 'hooks', 'beginner'],
-    difficulty: 'Beginner',
-    isFeatured: false,
-  },
-  {
-    title: 'React Router v6 Official Documentation',
-    description: 'Official documentation for React Router v6 — the standard client-side routing solution for React SPAs. Covers routes, nested routes, dynamic segments, loaders, actions, error elements, lazy loading routes, and the powerful new data APIs introduced in v6.4.',
-    category: 'React JS',
-    resourceType: 'Documentation',
-    url: 'https://reactrouter.com/en/main',
-    thumbnail: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80',
-    tags: ['react router', 'routing', 'spa', 'loaders', 'nested routes', 'v6'],
-    difficulty: 'Intermediate',
-    isFeatured: false,
-  },
-  {
-    title: 'React State Management – Context, Zustand & Redux Toolkit',
-    description: 'A practical guide comparing all major React state management approaches — local state, Context API, useReducer, Zustand, Jotai, and Redux Toolkit. Covers when to use each solution, performance pitfalls, re-render optimization, and real project patterns for scalable apps.',
-    category: 'React JS',
-    resourceType: 'Article',
-    url: 'https://react.dev/learn/managing-state',
-    thumbnail: 'https://images.unsplash.com/photo-1537884944318-390069bb8665?auto=format&fit=crop&w=800&q=80',
-    tags: ['react', 'state management', 'context', 'zustand', 'redux', 'hooks'],
-    difficulty: 'Intermediate',
-    isFeatured: false,
-  },
-  {
-    title: 'React + Vite + TypeScript – Production Setup Guide',
-    description: 'A complete guide to bootstrapping a production-ready React app with Vite, TypeScript, ESLint, Prettier, Vitest for unit testing, React Testing Library, Husky pre-commit hooks, absolute imports, and path aliases. Covers best project architecture patterns for large teams.',
-    category: 'React JS',
-    resourceType: 'Article',
-    url: 'https://vitejs.dev/guide/',
-    thumbnail: 'https://images.unsplash.com/photo-1592609931041-40265b692757?auto=format&fit=crop&w=800&q=80',
-    tags: ['react', 'vite', 'typescript', 'testing', 'eslint', 'project setup'],
-    difficulty: 'Intermediate',
-    isFeatured: true,
-  },
-  {
-    title: 'Fireship: React in 100 Seconds (YouTube)',
-    description: "Fireship's lightning-fast React conceptual overview — virtual DOM, JSX, components, state, hooks, React 18 features like concurrent mode, transitions, Suspense, and the React ecosystem including Next.js and Remix, explained in an incredibly engaging, visual format.",
-    category: 'React JS',
-    resourceType: 'Video',
-    url: 'https://www.youtube.com/watch?v=Tn6-PIqc4UM',
-    thumbnail: 'https://images.unsplash.com/photo-1617040619263-41c5a9ca7521?auto=format&fit=crop&w=800&q=80',
-    tags: ['react', 'fireship', 'youtube', 'hooks', 'jsx', 'overview'],
-    difficulty: 'Beginner',
-    isFeatured: false,
-  },
-
-  // ─────────────────────────────────────────────
-  // NODE.JS AND EXPRESS — A to Z
-  // ─────────────────────────────────────────────
-  {
-    title: 'Node.js Official Documentation & Learning Path',
-    description: 'Master asynchronous programming, the event loop, stream architectures, buffers, worker threads, file system operations, the HTTP module, child processes, and microservices in Node.js. The official guide covers everything from installation to building production-ready APIs.',
-    category: 'Node.js and Express',
-    resourceType: 'Documentation',
-    url: 'https://nodejs.org/en/learn',
-    thumbnail: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80',
-    tags: ['nodejs', 'backend', 'streams', 'event loop', 'async', 'http'],
-    difficulty: 'Intermediate',
-    isFeatured: true,
-  },
-  {
-    title: 'Express.js Official Guide & API Reference',
-    description: 'The official Express.js documentation covering routing, middleware, template engines, error handling, static files, request/response objects, and advanced patterns like router-level middleware, multer file uploads, express-validator, and rate limiting for production APIs.',
-    category: 'Node.js and Express',
-    resourceType: 'Documentation',
-    url: 'https://expressjs.com/en/guide/routing.html',
-    thumbnail: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80',
-    tags: ['express', 'routing', 'middleware', 'rest api', 'nodejs', 'backend'],
-    difficulty: 'Intermediate',
-    isFeatured: false,
-  },
-  {
-    title: 'Node.js Design Patterns – Professional Book',
-    description: 'An in-depth book on professional Node.js design covering the module system, asynchronous control flows, streams, creational/structural/behavioral design patterns, messaging systems, universal JavaScript, and scalable microservices architecture using Node.js.',
-    category: 'Node.js and Express',
-    resourceType: 'Book',
-    url: 'https://www.nodejsdesignpatterns.com/',
-    thumbnail: 'https://images.unsplash.com/photo-1483817101829-339b08e8d83f?auto=format&fit=crop&w=800&q=80',
-    tags: ['nodejs', 'design patterns', 'streams', 'microservices', 'advanced', 'async'],
-    difficulty: 'Advanced',
-    isFeatured: false,
-  },
-  {
-    title: 'JWT Authentication with Node.js & Express – Full Guide',
-    description: 'A complete, practical guide to implementing JWT-based authentication in Node.js with Express. Covers user registration, password hashing with bcrypt, login, JWT token generation, refresh tokens, protected routes, role-based access control, and secure HTTP-only cookie storage.',
-    category: 'Node.js and Express',
-    resourceType: 'Article',
-    url: 'https://jwt.io/introduction',
-    thumbnail: 'https://images.unsplash.com/photo-1614624532983-4ce03382d63d?auto=format&fit=crop&w=800&q=80',
-    tags: ['jwt', 'authentication', 'express', 'nodejs', 'security', 'bcrypt'],
-    difficulty: 'Intermediate',
-    isFeatured: true,
-  },
-  {
-    title: 'REST API Design Best Practices – Node.js & Express',
-    description: 'Comprehensive guide covering REST API design principles — resource naming conventions, HTTP methods and status codes, pagination strategies, filtering, sorting, API versioning, HATEOAS, OpenAPI/Swagger documentation, rate limiting, and API security with Helmet and CORS.',
-    category: 'Node.js and Express',
-    resourceType: 'Article',
-    url: 'https://restfulapi.net/',
-    thumbnail: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80',
-    tags: ['rest api', 'express', 'nodejs', 'http', 'design', 'swagger'],
-    difficulty: 'Intermediate',
-    isFeatured: false,
-  },
-  {
-    title: 'Traversy Media: Node.js & Express Crash Course',
-    description: "Brad Traversy's popular Node.js and Express crash course covering project setup, routing, middleware, template engines (EJS), static files, form handling, REST APIs, and MongoDB integration with Mongoose — all in a single practical session with real, working code.",
-    category: 'Node.js and Express',
-    resourceType: 'Video',
-    url: 'https://www.youtube.com/watch?v=L72fhGm1tfE',
-    thumbnail: 'https://images.unsplash.com/photo-1593720213428-28a5b9e94613?auto=format&fit=crop&w=800&q=80',
-    tags: ['express', 'nodejs', 'crash course', 'traversy', 'ejs', 'youtube'],
-    difficulty: 'Beginner',
-    isFeatured: false,
-  },
-
-  // ─────────────────────────────────────────────
-  // MONGODB AND DATABASES — A to Z
-  // ─────────────────────────────────────────────
-  {
-    title: 'MongoDB University – Free Developer Learning Paths',
-    description: 'Official free courses by MongoDB covering data modeling, CRUD operations, indexing strategies, aggregation framework pipelines, Atlas cloud configuration, transactions, change streams, and performance tuning. Earn official MongoDB credentials — all completely free.',
-    category: 'MongoDB and Databases',
-    resourceType: 'Course',
-    url: 'https://learn.mongodb.com/',
-    thumbnail: 'https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=800&q=80',
-    tags: ['mongodb', 'nosql', 'databases', 'atlas', 'aggregation', 'indexing'],
-    difficulty: 'Beginner',
-    isFeatured: true,
-  },
-  {
-    title: 'Mongoose Official Documentation',
-    description: 'Complete documentation for Mongoose — the elegant MongoDB object modeling library for Node.js. Covers schemas, models, CRUD queries, validation, middleware (pre/post hooks), virtuals, population (JOINs between collections), aggregation pipelines, and multi-document transactions.',
-    category: 'MongoDB and Databases',
-    resourceType: 'Documentation',
-    url: 'https://mongoosejs.com/docs/',
-    thumbnail: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80',
-    tags: ['mongoose', 'mongodb', 'schema', 'validation', 'population', 'nodejs'],
-    difficulty: 'Intermediate',
-    isFeatured: false,
-  },
-  {
-    title: 'SQLBolt: Interactive SQL Lessons from Scratch',
-    description: 'Learn SQL interactively through 20 step-by-step lessons directly in the browser. Covers SELECT queries, WHERE filtering, ORDER BY, aggregate functions, GROUP BY, JOINs (inner, outer, cross), subqueries, INSERT/UPDATE/DELETE, and database normalization principles.',
-    category: 'MongoDB and Databases',
-    resourceType: 'Interactive Tool',
-    url: 'https://sqlbolt.com/',
-    thumbnail: 'https://images.unsplash.com/photo-1609921212029-bb5a28e60960?auto=format&fit=crop&w=800&q=80',
-    tags: ['sql', 'database', 'interactive', 'queries', 'joins', 'relational'],
-    difficulty: 'Beginner',
-    isFeatured: true,
-  },
-  {
-    title: 'PostgreSQL Tutorial – The Complete Reference',
-    description: 'An exhaustive, free online PostgreSQL reference covering installation, data types, SELECT, INSERT, UPDATE, DELETE, transactions, indexing, stored procedures, triggers, views, CTEs (Common Table Expressions), full-text search, JSONB support, and performance optimization.',
-    category: 'MongoDB and Databases',
-    resourceType: 'Documentation',
-    url: 'https://www.postgresqltutorial.com/',
-    thumbnail: 'https://images.unsplash.com/photo-1516116216624-53e697fedbea?auto=format&fit=crop&w=800&q=80',
-    tags: ['postgresql', 'sql', 'database', 'relational', 'transactions', 'json'],
-    difficulty: 'Intermediate',
-    isFeatured: false,
-  },
-  {
-    title: 'MongoDB Aggregation Pipeline – Full Crash Course',
-    description: 'A deep dive into the MongoDB Aggregation Framework — $match, $group, $project, $sort, $limit, $skip, $lookup (joins between collections), $unwind, $facet, $bucket, and $graphLookup. Includes practical real-world examples for analytics, reporting, and dashboard data.',
-    category: 'MongoDB and Databases',
-    resourceType: 'Video',
-    url: 'https://www.youtube.com/watch?v=A3jvoE0jGdE',
-    thumbnail: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80',
-    tags: ['mongodb', 'aggregation', 'pipeline', '$lookup', '$group', 'analytics'],
-    difficulty: 'Advanced',
-    isFeatured: false,
-  },
-  {
-    title: 'Database Design & Normalization – Full Course',
-    description: 'Learn relational database design from scratch — ER diagrams, entity relationships, primary and foreign keys, 1NF, 2NF, 3NF and BCNF normalization forms, denormalization trade-offs, B-tree indexing strategies, query optimization with EXPLAIN, and schema migration techniques.',
-    category: 'MongoDB and Databases',
-    resourceType: 'Course',
-    url: 'https://www.studytonight.com/dbms/',
-    thumbnail: 'https://images.unsplash.com/photo-1537884944318-390069bb8665?auto=format&fit=crop&w=800&q=80',
-    tags: ['database design', 'normalization', 'er diagram', 'sql', 'dbms', 'indexing'],
-    difficulty: 'Intermediate',
-    isFeatured: false,
-  },
-
-  // ─────────────────────────────────────────────
-  // FULL STACK DEVELOPMENT — A to Z
-  // ─────────────────────────────────────────────
-  {
-    title: 'CS50x: Introduction to Computer Science – Harvard',
-    description: "Harvard's legendary entry point into computer science. Covers C programming, algorithms, data structures, Python, SQL, HTML/CSS/JavaScript, and the Flask micro-framework — culminating in a full self-designed final project. Develops deep problem-solving and systems-thinking skills.",
-    category: 'Full Stack Development',
-    resourceType: 'Course',
-    url: 'https://cs50.harvard.edu/x/',
-    thumbnail: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80',
-    tags: ['harvard', 'cs50', 'c', 'python', 'algorithms', 'foundations', 'fullstack'],
-    difficulty: 'Beginner',
-    isFeatured: true,
-  },
-  {
-    title: 'The Odin Project: Full Stack JavaScript Curriculum',
-    description: 'A complete, hands-on, free open-source curriculum providing real project-based learning for Full Stack JavaScript with Node/Express/React. Covers Git, command line, databases, deployment, testing, and career preparation through dozens of portfolio projects.',
-    category: 'Full Stack Development',
-    resourceType: 'Course',
-    url: 'https://www.theodinproject.com/',
-    thumbnail: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80',
-    tags: ['fullstack', 'projects', 'javascript', 'git', 'career', 'odin'],
-    difficulty: 'Beginner',
-    isFeatured: true,
-  },
-  {
-    title: 'Full Stack Open – University of Helsinki',
-    description: 'Deep dive into modern web development. Learn React 18, Redux Toolkit, Node.js, Express, MongoDB, GraphQL, TypeScript, React Native, CI/CD with GitHub Actions, Docker, and PostgreSQL through 14 parts of university-level free coursework with graded exercises.',
-    category: 'Full Stack Development',
-    resourceType: 'Course',
-    url: 'https://fullstackopen.com/en/',
-    thumbnail: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80',
-    tags: ['react', 'node', 'express', 'mongodb', 'graphql', 'typescript', 'fullstack'],
-    difficulty: 'Intermediate',
-    isFeatured: true,
-  },
-  {
-    title: 'Docker & DevOps for Full Stack Developers',
-    description: 'Learn to containerize full-stack applications using Docker and Docker Compose. Covers Dockerfile, multi-stage builds, volumes, networks, docker-compose for Node/MongoDB/React stacks, GitHub Actions CI/CD pipelines, environment management, and deployment to cloud platforms.',
-    category: 'Full Stack Development',
-    resourceType: 'Course',
-    url: 'https://fullstackopen.com/en/part12',
-    thumbnail: 'https://images.unsplash.com/photo-1646617747609-45b466ace9a6?auto=format&fit=crop&w=800&q=80',
-    tags: ['docker', 'devops', 'fullstack', 'ci/cd', 'github actions', 'containers'],
-    difficulty: 'Advanced',
-    isFeatured: false,
-  },
-  {
-    title: 'Roadmap.sh – Full Stack Developer Roadmap',
-    description: 'Community-curated, visually rich developer roadmaps covering every skill needed for frontend, backend, and full-stack development. Includes recommended resources, step-by-step learning order, and role-based tracks for DevOps, Android, React, Node.js, and AI engineering.',
-    category: 'Full Stack Development',
-    resourceType: 'Cheatsheet',
-    url: 'https://roadmap.sh/full-stack',
-    thumbnail: 'https://images.unsplash.com/photo-1508830524289-0adcbe822b40?auto=format&fit=crop&w=800&q=80',
-    tags: ['roadmap', 'fullstack', 'learning path', 'frontend', 'backend', 'devops'],
-    difficulty: 'All Levels',
-    isFeatured: true,
-  },
-  {
-    title: 'MERN Stack from Scratch – Traversy Media',
-    description: "Brad Traversy's comprehensive MERN (MongoDB, Express, React, Node.js) stack course building a full-featured application from scratch. Covers React components, Redux state, JWT authentication, Mongoose models, REST API design, and cloud deployment on Render and Vercel.",
-    category: 'Full Stack Development',
-    resourceType: 'Video',
-    url: 'https://www.traversymedia.com/',
-    thumbnail: 'https://images.unsplash.com/photo-1589652717521-10c0d7e7d604?auto=format&fit=crop&w=800&q=80',
-    tags: ['mern', 'mongodb', 'express', 'react', 'nodejs', 'fullstack', 'traversy'],
-    difficulty: 'Intermediate',
-    isFeatured: false,
-  },
-
-  // ─────────────────────────────────────────────
-  // UI/UX DESIGN — A to Z
-  // ─────────────────────────────────────────────
-  {
-    title: 'Refactoring UI – Practical UI Design for Developers',
-    description: 'Actionable tips and visual patterns to design clean, professional user interfaces without guesswork. Covers typography hierarchy, color system design, spacing scale, shadow design, component patterns, contrast accessibility (WCAG), and fixing common design mistakes developers make.',
-    category: 'UI/UX Design',
-    resourceType: 'Article',
-    url: 'https://www.refactoringui.com/',
-    thumbnail: 'https://images.unsplash.com/photo-1581291518655-9523c932edcf?auto=format&fit=crop&w=800&q=80',
-    tags: ['design', 'ui', 'ux', 'typography', 'color', 'spacing', 'wcag'],
-    difficulty: 'Beginner',
-    isFeatured: true,
-  },
-  {
-    title: 'Google UX Design Certificate – Coursera',
-    description: "Google's professional UX design certification covering UX research methods, wireframing, low-fidelity and high-fidelity prototyping in Figma, usability testing, accessibility principles, inclusive design, and building a complete UX portfolio. Free to audit.",
-    category: 'UI/UX Design',
-    resourceType: 'Course',
-    url: 'https://www.coursera.org/professional-certificates/google-ux-design',
-    thumbnail: 'https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?auto=format&fit=crop&w=800&q=80',
-    tags: ['ux', 'ui', 'google', 'figma', 'research', 'accessibility', 'portfolio'],
-    difficulty: 'Beginner',
-    isFeatured: true,
-  },
-  {
-    title: 'Figma for Beginners – Official Design Crash Course',
-    description: "Master Figma's auto-layout, responsive component variants, typography tokens, vector pen tool, prototyping animations, developer handoff mode, and design system organization. Includes Figma's official free resource library tutorials for web and mobile design.",
-    category: 'UI/UX Design',
-    resourceType: 'Video',
-    url: 'https://www.figma.com/resource-library/design-basics/',
-    thumbnail: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80',
-    tags: ['figma', 'prototyping', 'wireframing', 'design system', 'auto-layout', 'tokens'],
-    difficulty: 'Beginner',
-    isFeatured: false,
-  },
-  {
-    title: 'Laws of UX – Design Psychology Principles',
-    description: "A beautiful, interactive collection of key psychological principles every designer should know — Fitts's Law, Hick's Law, Miller's Law, Jakob's Law, the Aesthetic-Usability Effect, and Tesler's Law. Essential for understanding why excellent design feels naturally intuitive.",
-    category: 'UI/UX Design',
-    resourceType: 'Article',
-    url: 'https://lawsofux.com/',
-    thumbnail: 'https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=800&q=80',
-    tags: ['ux', 'psychology', 'design principles', 'heuristics', 'usability', 'fitts'],
-    difficulty: 'Intermediate',
-    isFeatured: false,
-  },
-  {
-    title: 'Design Systems & Storybook – Component Libraries',
-    description: 'Learn to build scalable, reusable component design systems with Storybook. Covers component documentation, design token architecture, theming, visual accessibility testing, design-to-code workflows, and integrating design systems with React, Vue, or Angular codebases.',
-    category: 'UI/UX Design',
-    resourceType: 'Documentation',
-    url: 'https://storybook.js.org/tutorials/',
-    thumbnail: 'https://images.unsplash.com/photo-1607798748738-b15c40d33d57?auto=format&fit=crop&w=800&q=80',
-    tags: ['design system', 'storybook', 'components', 'tokens', 'react', 'accessibility'],
-    difficulty: 'Intermediate',
-    isFeatured: false,
-  },
-  {
-    title: 'Coolors: Free Color Palette Generator & Theory',
-    description: 'Generate beautiful, accessible, harmonious color palettes for UI projects instantly. Covers color theory fundamentals — hue, saturation, lightness, complementary colors, triadic schemes, analogous palettes, WCAG contrast ratios (AA/AAA), and creating dark mode color systems.',
-    category: 'UI/UX Design',
-    resourceType: 'Interactive Tool',
-    url: 'https://coolors.co/',
-    thumbnail: 'https://images.unsplash.com/photo-1505739818593-1c3d5b1b5bf8?auto=format&fit=crop&w=800&q=80',
-    tags: ['color', 'palette', 'design', 'ui', 'wcag', 'accessibility', 'dark mode'],
-    difficulty: 'Beginner',
-    isFeatured: false,
-  },
-
-  // ─────────────────────────────────────────────
-  // PYTHON — A to Z
-  // ─────────────────────────────────────────────
-  {
-    title: 'Automate the Boring Stuff with Python – Free Book',
-    description: 'Practical programming for total beginners. Learn to write Python scripts that automate file operations, scrape websites with BeautifulSoup, read/write Excel/CSV/PDF files, schedule tasks with cron, send email notifications, control the keyboard/mouse with PyAutoGUI.',
-    category: 'Python',
-    resourceType: 'Book',
-    url: 'https://automatetheboringstuff.com/',
-    thumbnail: 'https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=800&q=80',
-    tags: ['python', 'automation', 'beginners', 'web scraping', 'files', 'scripts'],
-    difficulty: 'Beginner',
-    isFeatured: true,
-  },
-  {
-    title: 'CS50P: Introduction to Python – Harvard Free Course',
-    description: "Harvard's free Introduction to Programming with Python (CS50P). Covers functions, variables, conditionals, loops, exceptions, libraries, file I/O, regular expressions, object-oriented programming, and building a final project with excellent pedagogy and challenging problem sets.",
-    category: 'Python',
-    resourceType: 'Course',
-    url: 'https://cs50.harvard.edu/python/',
-    thumbnail: 'https://images.unsplash.com/photo-1593720213428-28a5b9e94613?auto=format&fit=crop&w=800&q=80',
-    tags: ['python', 'harvard', 'cs50', 'beginner', 'oop', 'functions', 'exceptions'],
-    difficulty: 'Beginner',
-    isFeatured: true,
-  },
-  {
-    title: 'Python.org Official Tutorial – Complete Reference',
-    description: 'The official Python tutorial covering data types, control flow, functions, modules, I/O, exception handling, class-based OOP, iterators, generators, the standard library, virtual environments, packaging with pip, and the Python Package Index (PyPI).',
-    category: 'Python',
-    resourceType: 'Documentation',
-    url: 'https://docs.python.org/3/tutorial/',
-    thumbnail: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=80',
-    tags: ['python', 'official', 'tutorial', 'classes', 'generators', 'stdlib', 'pip'],
-    difficulty: 'Beginner',
-    isFeatured: false,
-  },
-  {
-    title: 'Real Python – Tutorials, Courses & In-Depth Articles',
-    description: 'Real Python offers high-quality tutorials and articles covering web development with Django and Flask, data science with pandas and NumPy, Python packaging, testing with pytest, decorators, context managers, async Python with asyncio, and career development guidance.',
-    category: 'Python',
-    resourceType: 'Article',
-    url: 'https://realpython.com/',
-    thumbnail: 'https://images.unsplash.com/photo-1483366774565-c783b9f70e2c?auto=format&fit=crop&w=800&q=80',
-    tags: ['python', 'django', 'flask', 'pandas', 'testing', 'decorators', 'async'],
-    difficulty: 'Intermediate',
-    isFeatured: false,
-  },
-  {
-    title: 'Python Data Science Handbook – Free Online',
-    description: "Jake VanderPlas's comprehensive guide to Python's data science ecosystem. Covers NumPy array operations, pandas DataFrames, Matplotlib and Seaborn visualization, and Scikit-Learn machine learning pipelines. Essential reading for data analysis and ML engineers.",
-    category: 'Python',
-    resourceType: 'Book',
-    url: 'https://jakevdp.github.io/PythonDataScienceHandbook/',
-    thumbnail: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80',
-    tags: ['python', 'data science', 'numpy', 'pandas', 'matplotlib', 'machine learning'],
-    difficulty: 'Intermediate',
-    isFeatured: false,
-  },
-  {
-    title: 'FastAPI Official Documentation – Fast Python REST APIs',
-    description: 'Build blazing-fast Python REST APIs with FastAPI, Pydantic v2, and Uvicorn. Covers path parameters, query params, request body validation, async endpoints, dependency injection, OAuth2 JWT authentication, automatic OpenAPI documentation, and Docker deployment.',
-    category: 'Python',
-    resourceType: 'Documentation',
-    url: 'https://fastapi.tiangolo.com/',
-    thumbnail: 'https://images.unsplash.com/photo-1452457750107-be084b4f04af?auto=format&fit=crop&w=800&q=80',
-    tags: ['fastapi', 'python', 'rest api', 'async', 'pydantic', 'openapi', 'docker'],
-    difficulty: 'Intermediate',
-    isFeatured: true,
-  },
-
-  // ─────────────────────────────────────────────
-  // JAVA — A to Z
-  // ─────────────────────────────────────────────
-  {
-    title: 'Java Programming MOOC – University of Helsinki',
-    description: 'A renowned two-part open online course on Java fundamentals and advanced topics. Covers variables, control flow, OOP (classes, inheritance, polymorphism, interfaces, abstract classes), unit testing with JUnit 5, generics, streams API, lambda expressions, and data structures in Java.',
-    category: 'Java',
-    resourceType: 'Course',
-    url: 'https://java-programming.mooc.fi/',
-    thumbnail: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=80',
-    tags: ['java', 'oop', 'junit', 'backend', 'mooc', 'lambdas', 'streams'],
-    difficulty: 'Beginner',
-    isFeatured: true,
-  },
-  {
-    title: 'Codecademy: Learn Java – Interactive Coding Course',
-    description: 'An interactive Java course designed for complete beginners. Covers printing, variables, data types, conditionals, loops, arrays, ArrayLists, OOP classes and objects, inheritance, polymorphism, encapsulation, generics, and the Java Collections Framework with hands-on exercises.',
-    category: 'Java',
-    resourceType: 'Interactive Tool',
-    url: 'https://www.codecademy.com/learn/learn-java',
-    thumbnail: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80',
-    tags: ['java', 'interactive', 'codecademy', 'oop', 'collections', 'beginner'],
-    difficulty: 'Beginner',
-    isFeatured: false,
-  },
-  {
-    title: 'Spring Boot Official Guides – Java Backend Framework',
-    description: 'Official Spring Boot documentation and step-by-step guides covering dependency injection (IoC), auto-configuration, RESTful APIs, Spring Data JPA with Hibernate, Spring Security, OAuth2 with JWT, testing with JUnit 5 and Mockito, Actuator monitoring, and Docker deployment.',
-    category: 'Java',
-    resourceType: 'Documentation',
-    url: 'https://spring.io/guides',
-    thumbnail: 'https://images.unsplash.com/photo-1647166545674-ce28ce93bdca?auto=format&fit=crop&w=800&q=80',
-    tags: ['spring boot', 'java', 'rest api', 'jpa', 'spring security', 'backend', 'docker'],
-    difficulty: 'Intermediate',
-    isFeatured: true,
-  },
-  {
-    title: 'Effective Java – Joshua Bloch (Book)',
-    description: "Timeless best practices and idioms for Java development by Joshua Bloch. Item-by-item advice on creating and destroying objects, methods common to all objects, classes and interfaces, generics, enums, lambdas, streams, concurrency, and writing maintainable robust Java code.",
-    category: 'Java',
-    resourceType: 'Book',
-    url: 'https://www.oreilly.com/library/view/effective-java/9780134686097/',
-    thumbnail: 'https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?auto=format&fit=crop&w=800&q=80',
-    tags: ['java', 'best practices', 'advanced', 'generics', 'concurrency', 'lambdas'],
-    difficulty: 'Advanced',
-    isFeatured: false,
-  },
-  {
-    title: 'Java Multithreading & Concurrency – Deep Dive Course',
-    description: 'A deep dive into Java concurrency — threads, Runnable, Callable, thread pools, ExecutorService, synchronized blocks, ReentrantLock, atomic variables, concurrent collections (ConcurrentHashMap, BlockingQueue), CompletableFuture, Fork/Join framework, and Java 21 virtual threads.',
-    category: 'Java',
-    resourceType: 'Video',
-    url: 'https://www.youtube.com/watch?v=WldMTtUWqTg',
-    thumbnail: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80',
-    tags: ['java', 'multithreading', 'concurrency', 'executor', 'locks', 'completablefuture'],
-    difficulty: 'Advanced',
-    isFeatured: false,
-  },
-  {
-    title: 'LeetCode – Java Interview Problem Practice',
-    description: 'Practice thousands of coding problems in Java on LeetCode. Covers arrays, strings, linked lists, trees, graphs, dynamic programming, backtracking, bit manipulation, and system design — all essential for Java backend developer interviews at top tech companies.',
-    category: 'Java',
-    resourceType: 'Interactive Tool',
-    url: 'https://leetcode.com/problemset/all/',
-    thumbnail: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80',
-    tags: ['java', 'leetcode', 'interviews', 'dsa', 'arrays', 'problem solving'],
-    difficulty: 'Intermediate',
-    isFeatured: false,
-  },
-
-  // ─────────────────────────────────────────────
-  // DATA STRUCTURES AND ALGORITHMS — A to Z
-  // ─────────────────────────────────────────────
-  {
-    title: 'NeetCode: Algorithms & LeetCode Roadmap',
-    description: 'Structured visual video walkthroughs of all fundamental DSA patterns — arrays, two pointers, sliding window, binary search, linked lists, stacks, queues, trees, heaps, graphs, backtracking, topological sort, and dynamic programming. Clean Python solutions with detailed explanations.',
-    category: 'Data Structures and Algorithms',
-    resourceType: 'Video',
-    url: 'https://neetcode.io/practice',
-    thumbnail: 'https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=800&q=80',
-    tags: ['dsa', 'algorithms', 'leetcode', 'neetcode', 'interviews', 'patterns'],
-    difficulty: 'Intermediate',
-    isFeatured: true,
-  },
-  {
-    title: "Striver's A2Z DSA Sheet – Complete 455 Problem Roadmap",
-    description: "Striver's widely-used A-to-Z DSA roadmap with 455 problems organized by topic with full video solutions. Covers arrays, strings, maths, recursion, sorting algorithms, binary search, linked lists, stacks, queues, trees, heaps, graphs, DP, tries, and bit manipulation.",
-    category: 'Data Structures and Algorithms',
-    resourceType: 'Cheatsheet',
-    url: 'https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/',
-    thumbnail: 'https://images.unsplash.com/photo-1605379399843-5870eea9b74e?auto=format&fit=crop&w=800&q=80',
-    tags: ['dsa', 'striver', 'a2z', 'competitive', 'arrays', 'dp', 'graphs'],
-    difficulty: 'All Levels',
-    isFeatured: true,
-  },
-  {
-    title: 'VisuAlgo – Visualizing Data Structures & Algorithms',
-    description: 'Free interactive website visualizing data structures and algorithms through step-by-step animation. Covers all sorting algorithms, linked lists, binary heaps, BST, AVL tree, segment tree, graph algorithms (BFS, DFS, Dijkstra, Kruskal, Floyd-Warshall), and network flow.',
-    category: 'Data Structures and Algorithms',
-    resourceType: 'Interactive Tool',
-    url: 'https://visualgo.net/',
-    thumbnail: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80',
-    tags: ['dsa', 'visualization', 'sorting', 'graphs', 'trees', 'interactive', 'bfs'],
-    difficulty: 'All Levels',
-    isFeatured: true,
-  },
-  {
-    title: 'MIT OpenCourseWare: Introduction to Algorithms (6.006)',
-    description: "MIT's lecture series based on the legendary CLRS textbook. Covers divide and conquer, dynamic programming, greedy algorithms, graph algorithms (BFS, DFS, Bellman-Ford, Dijkstra), amortized analysis, NP-completeness, and advanced data structures like Fibonacci heaps.",
-    category: 'Data Structures and Algorithms',
-    resourceType: 'Course',
-    url: 'https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/',
-    thumbnail: 'https://images.unsplash.com/photo-1582719188393-bb71ca45dbb9?auto=format&fit=crop&w=800&q=80',
-    tags: ['algorithms', 'mit', 'clrs', 'dynamic programming', 'graphs', 'advanced'],
-    difficulty: 'Advanced',
-    isFeatured: false,
-  },
-  {
-    title: 'Grokking the Coding Interview – LeetCode Patterns',
-    description: 'Learn the 14 universal coding interview patterns — sliding window, two pointers, fast and slow pointers, merge intervals, cyclic sort, tree BFS, tree DFS, two heaps, subsets, modified binary search, bitwise XOR, top K elements, topological sort, and dynamic programming.',
-    category: 'Data Structures and Algorithms',
-    resourceType: 'Course',
-    url: 'https://www.designgurus.io/course/grokking-the-coding-interview',
-    thumbnail: 'https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=800&q=80',
-    tags: ['dsa', 'patterns', 'interviews', 'sliding window', 'two pointers', 'bfs', 'dp'],
-    difficulty: 'Intermediate',
-    isFeatured: false,
-  },
-  {
-    title: 'Big-O Cheatsheet – Algorithm Complexity Reference',
-    description: 'The definitive Big-O complexity cheatsheet covering time and space complexity for all major data structures (arrays, stacks, queues, linked lists, hash tables, trees, graphs) and sorting algorithms (quicksort, mergesort, heapsort, timsort) — essential for every interview.',
-    category: 'Data Structures and Algorithms',
-    resourceType: 'Cheatsheet',
-    url: 'https://www.bigocheatsheet.com/',
-    thumbnail: 'https://images.unsplash.com/photo-1485796826113-174aa68fd81b?auto=format&fit=crop&w=800&q=80',
-    tags: ['big-o', 'complexity', 'cheatsheet', 'dsa', 'sorting', 'time complexity'],
-    difficulty: 'All Levels',
-    isFeatured: false,
-  },
-
-  // ─────────────────────────────────────────────
-  // INTERVIEW PREPARATION
-  // ─────────────────────────────────────────────
-  {
-    title: 'Tech Interview Handbook – Free Interview Prep',
-    description: 'Curated study plans, behavioral interview questions, algorithm cheatsheets, resume templates, salary negotiation strategies, and system design resources curated by former Meta engineers. Used by thousands of developers landing offers at FAANG companies.',
-    category: 'Interview Preparation',
-    resourceType: 'Cheatsheet',
-    url: 'https://www.techinterviewhandbook.org/',
-    thumbnail: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80',
-    tags: ['interviews', 'coding test', 'behavioral', 'resume', 'prep', 'faang'],
-    difficulty: 'All Levels',
-    isFeatured: true,
-  },
-  {
-    title: 'System Design Primer – Donne Martin (GitHub)',
-    description: 'An immense, open-source visual guide to designing large-scale distributed systems. Covers load balancing, caching with Redis, SQL vs NoSQL databases, CDN, DNS, horizontal vs vertical scaling, CAP theorem, consistency patterns, and complete system design interview walkthroughs.',
-    category: 'Interview Preparation',
-    resourceType: 'Documentation',
-    url: 'https://github.com/donnemartin/system-design-primer',
-    thumbnail: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80',
-    tags: ['system design', 'architecture', 'scalability', 'redis', 'cdn', 'interviews'],
-    difficulty: 'Advanced',
-    isFeatured: true,
-  },
+  {
+    "title": "freeCodeCamp: JavaScript Algorithms & Data Structures Certification",
+    "description": "A 300-hour comprehensive certification covering JavaScript fundamentals, ES6+ syntax, regular expressions, debugging, basic data structures, OOP, functional programming, and algorithm scripting challenges. Build 5 certified projects from scratch.",
+    "category": "JavaScript",
+    "resourceType": "Course",
+    "url": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/",
+    "thumbnail": "https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "javascript",
+      "course",
+      "beginner",
+      "algorithms",
+      "freecodecamp",
+      "certification"
+    ],
+    "difficulty": "Beginner",
+    "isFeatured": true
+  },
+  {
+    "title": "SuperSimpleDev: JavaScript Full Course (YouTube & Hands-on)",
+    "description": "Acclaimed beginner-friendly course covering variables, functions, objects, arrays, loops, the DOM, event listeners, localStorage, CSS integration, Amazon project cloning, and modern asynchronous JavaScript step-by-step.",
+    "category": "JavaScript",
+    "resourceType": "Course",
+    "url": "https://www.youtube.com/watch?v=EerdGm-ehJQ",
+    "thumbnail": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "javascript",
+      "course",
+      "beginner",
+      "dom",
+      "hands-on",
+      "projects"
+    ],
+    "difficulty": "Beginner",
+    "isFeatured": true
+  },
+  {
+    "title": "The Odin Project: JavaScript Foundations & DOM Manipulation",
+    "description": "Learn modern JavaScript through an open-source project-based curriculum. Master variables, operators, conditionals, functions, clean code habits, array methods (map, filter, reduce), DOM manipulation, and build games like Rock Paper Scissors.",
+    "category": "JavaScript",
+    "resourceType": "Course",
+    "url": "https://www.theodinproject.com/paths/foundations/courses/foundations#javascript-basics",
+    "thumbnail": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "javascript",
+      "course",
+      "beginner",
+      "odin project",
+      "vanilla js",
+      "dom"
+    ],
+    "difficulty": "Beginner",
+    "isFeatured": true
+  },
+  {
+    "title": "Programming with Mosh: JavaScript Tutorial for Beginners",
+    "description": "Clear and concise explanation of fundamental JavaScript concepts: primitive vs reference types, functions, operators, control flow, loops, objects, factory functions, constructor functions, getters, setters, and error handling.",
+    "category": "JavaScript",
+    "resourceType": "Course",
+    "url": "https://www.youtube.com/watch?v=W6NZfCO5SIk",
+    "thumbnail": "https://images.unsplash.com/photo-1555099962-4199c345e5dd?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "javascript",
+      "course",
+      "beginner",
+      "fundamentals",
+      "mosh",
+      "crash course"
+    ],
+    "difficulty": "Beginner",
+    "isFeatured": false
+  },
+  {
+    "title": "JavaScript30 by Wes Bos – 30 Vanilla JS Projects",
+    "description": "Build 30 things in 30 days with 30 tutorials using pure vanilla JavaScript — no frameworks, no compilers, no libraries, no boilerplate. Drum kit, CSS variables controller, speech recognition, custom HTML5 video player, canvas drawing, and Whack-a-Mole.",
+    "category": "JavaScript",
+    "resourceType": "Course",
+    "url": "https://javascript30.com/",
+    "thumbnail": "https://images.unsplash.com/photo-1518773553398-650c184e0bb3?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "javascript",
+      "course",
+      "intermediate",
+      "projects",
+      "wes bos",
+      "vanilla"
+    ],
+    "difficulty": "Intermediate",
+    "isFeatured": true
+  },
+  {
+    "title": "Full Stack Open: Deep Dive into Modern JavaScript (Univ of Helsinki)",
+    "description": "Deep dive into modern JavaScript, functional programming, array manipulation (map, filter, reduce), promises, async/await, and REST backend interactions. Accredited university curriculum with automated code testing.",
+    "category": "JavaScript",
+    "resourceType": "Course",
+    "url": "https://fullstackopen.com/en/part1",
+    "thumbnail": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "javascript",
+      "course",
+      "intermediate",
+      "university",
+      "helsinki",
+      "es6"
+    ],
+    "difficulty": "Intermediate",
+    "isFeatured": true
+  },
+  {
+    "title": "JavaScript: Understanding the Weird Parts – V8 & Execution Context",
+    "description": "Deep dive into advanced JavaScript engine mechanics: the execution context, lexical environments, hoisting, closures, prototype chain, scope chains, 'this' binding, IIFEs, call/apply/bind, and building your own custom mini-framework.",
+    "category": "JavaScript",
+    "resourceType": "Course",
+    "url": "https://www.youtube.com/watch?v=Bv_5Zv5c-6g",
+    "thumbnail": "https://images.unsplash.com/photo-1555099962-4199c345e5dd?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "javascript",
+      "course",
+      "advanced",
+      "v8",
+      "execution context",
+      "closures",
+      "prototypes"
+    ],
+    "difficulty": "Advanced",
+    "isFeatured": true
+  },
+  {
+    "title": "Hardcore Functional JavaScript Architecture (Brian Lonsdorf)",
+    "description": "Master functional programming in JavaScript: pure functions, currying, partial application, function composition, functors, monads (Maybe, Either, Task), and building scalable point-free pipelines in production applications.",
+    "category": "JavaScript",
+    "resourceType": "Course",
+    "url": "https://frontendmasters.com/courses/functional-javascript-v2/",
+    "thumbnail": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "javascript",
+      "course",
+      "advanced",
+      "functional",
+      "monads",
+      "currying",
+      "architecture"
+    ],
+    "difficulty": "Advanced",
+    "isFeatured": true
+  },
+  {
+    "title": "freeCodeCamp: JavaScript Full 8-Hour Video Course (Beau Carnes)",
+    "description": "Complete 8-hour masterclass for beginners on YouTube covering all core JavaScript syntax, types, string methods, functions, scopes, arrays, objects, JSON, and DOM manipulation with zero prerequisites.",
+    "category": "JavaScript",
+    "resourceType": "Video",
+    "url": "https://www.youtube.com/watch?v=PkZNo7MFNFg",
+    "thumbnail": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "javascript",
+      "video",
+      "beginner",
+      "freecodecamp",
+      "youtube",
+      "crash course"
+    ],
+    "difficulty": "Beginner",
+    "isFeatured": true
+  },
+  {
+    "title": "Bro Code: JavaScript Full Course (12 Hours Complete Guide)",
+    "description": "An exhaustive 12-hour beginner course breaking down every concept into straightforward practical segments: variables, user input, math, ternary operators, switches, methods, closures, and canvas rendering.",
+    "category": "JavaScript",
+    "resourceType": "Video",
+    "url": "https://www.youtube.com/watch?v=lfmg-EJ8gm4",
+    "thumbnail": "https://images.unsplash.com/photo-1518773553398-650c184e0bb3?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "javascript",
+      "video",
+      "beginner",
+      "bro code",
+      "youtube",
+      "tutorial"
+    ],
+    "difficulty": "Beginner",
+    "isFeatured": false
+  },
+  {
+    "title": "Web Dev Simplified: JavaScript DOM Manipulation & Async/Await Deep Dive",
+    "description": "Kyle from Web Dev Simplified breaks down DOM selection, adding/removing elements, dataset attributes, event propagation (bubbling vs capturing), Promises, and Async/Await in under 45 minutes.",
+    "category": "JavaScript",
+    "resourceType": "Video",
+    "url": "https://www.youtube.com/watch?v=y17RuWkWdn8",
+    "thumbnail": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "javascript",
+      "video",
+      "intermediate",
+      "dom",
+      "events",
+      "async await",
+      "web dev simplified"
+    ],
+    "difficulty": "Intermediate",
+    "isFeatured": true
+  },
+  {
+    "title": "Traversy Media: 20 Vanilla JavaScript Projects Playlist",
+    "description": "Build 20 real-world responsive vanilla JavaScript projects: Form Validator, Movie Seat Booking, Custom Video Player, Exchange Rate Calculator, DOM Array Methods, Hangman Game, Meal Finder, and Typing Game.",
+    "category": "JavaScript",
+    "resourceType": "Video",
+    "url": "https://www.youtube.com/playlist?list=PLillGF-RfqbbnEGy3ROiLWk7JMCuSyurX",
+    "thumbnail": "https://images.unsplash.com/photo-1555099962-4199c345e5dd?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "javascript",
+      "video",
+      "intermediate",
+      "projects",
+      "traversy",
+      "hands-on"
+    ],
+    "difficulty": "Intermediate",
+    "isFeatured": true
+  },
+  {
+    "title": "Philip Roberts: What the heck is the event loop anyway? (JSConf EU)",
+    "description": "The most legendary conference talk in JavaScript history. Philip Roberts explains the call stack, Web APIs, task queue, and event loop using visual real-time animated simulation tools.",
+    "category": "JavaScript",
+    "resourceType": "Video",
+    "url": "https://www.youtube.com/watch?v=8aGhZQkoFbQ",
+    "thumbnail": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "javascript",
+      "video",
+      "advanced",
+      "event loop",
+      "call stack",
+      "async",
+      "jsconf"
+    ],
+    "difficulty": "Advanced",
+    "isFeatured": true
+  },
+  {
+    "title": "Jake Archibald: In The Loop – Event Loop, Microtasks & Render Pipeline",
+    "description": "Google Chrome developer advocate Jake Archibald dives into the microtask queue, requestAnimationFrame, task queue, and browser rendering lifecycle with illuminating step-by-step visualizations.",
+    "category": "JavaScript",
+    "resourceType": "Video",
+    "url": "https://www.youtube.com/watch?v=cCOL7MC4Pl0",
+    "thumbnail": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "javascript",
+      "video",
+      "advanced",
+      "event loop",
+      "microtasks",
+      "browser internals",
+      "google chrome"
+    ],
+    "difficulty": "Advanced",
+    "isFeatured": true
+  },
+  {
+    "title": "MDN Web Docs: JavaScript First Steps & Complete Guide",
+    "description": "Mozilla’s official beginner guide to JavaScript. Takes you from your very first lines of code to understanding variables, operators, conditionals, functions, and events with interactive web sandboxes.",
+    "category": "JavaScript",
+    "resourceType": "Documentation",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps",
+    "thumbnail": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "javascript",
+      "documentation",
+      "beginner",
+      "mdn",
+      "mozilla",
+      "standards"
+    ],
+    "difficulty": "Beginner",
+    "isFeatured": true
+  },
+  {
+    "title": "MDN Web Docs: Modern Web APIs (Fetch, Storage, Canvas, Audio)",
+    "description": "The definitive reference for all modern client-side Web APIs: XMLHttpRequest vs Fetch, FormData, LocalStorage, IndexedDB, Web Workers, IntersectionObserver, and Canvas 2D graphics.",
+    "category": "JavaScript",
+    "resourceType": "Documentation",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API",
+    "thumbnail": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "javascript",
+      "documentation",
+      "intermediate",
+      "web apis",
+      "fetch",
+      "storage",
+      "mdn"
+    ],
+    "difficulty": "Intermediate",
+    "isFeatured": false
+  },
+  {
+    "title": "ECMA-262: The Official ECMAScript Language Specification",
+    "description": "The authoritative international standard document defining JavaScript syntax, type semantics, execution contexts, prototype chains, realm records, agents, memory models, and garbage collection rules.",
+    "category": "JavaScript",
+    "resourceType": "Documentation",
+    "url": "https://tc39.es/ecma262/",
+    "thumbnail": "https://images.unsplash.com/photo-1555099962-4199c345e5dd?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "javascript",
+      "documentation",
+      "advanced",
+      "tc39",
+      "ecmascript",
+      "specifications",
+      "standards"
+    ],
+    "difficulty": "Advanced",
+    "isFeatured": true
+  },
+  {
+    "title": "MDN Web Docs: Metaprogramming with Proxy & Reflect in JavaScript",
+    "description": "Master metaprogramming, traps, handlers, interception of fundamental operations (get, set, has, apply, construct), revocation, and reactive state stores using JavaScript Proxy and Reflect APIs.",
+    "category": "JavaScript",
+    "resourceType": "Documentation",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Meta_programming",
+    "thumbnail": "https://images.unsplash.com/photo-1582719188393-bb71ca45dbb9?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "javascript",
+      "documentation",
+      "advanced",
+      "proxy",
+      "reflect",
+      "metaprogramming",
+      "mdn"
+    ],
+    "difficulty": "Advanced",
+    "isFeatured": false
+  },
+  {
+    "title": "A Smarter Way to Learn JavaScript (Interactive Book by Mark Myers)",
+    "description": "A uniquely structured beginner book that pairs short 10-minute explanation chapters with interactive browser-based coding exercises. Retains concepts through spaced repetition practice.",
+    "category": "JavaScript",
+    "resourceType": "Book",
+    "url": "https://www.asmarterwaytolearn.com/js/",
+    "thumbnail": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "javascript",
+      "book",
+      "beginner",
+      "interactive",
+      "practice",
+      "fundamentals"
+    ],
+    "difficulty": "Beginner",
+    "isFeatured": true
+  },
+  {
+    "title": "Eloquent JavaScript – Free Online Book (Marijn Haverbeke)",
+    "description": "A modern introduction to programming and JavaScript by Marijn Haverbeke. Covers variables, functions, data structures, higher-order functions, OOP, asynchronous programming, Node.js, and browser features with challenging exercises.",
+    "category": "JavaScript",
+    "resourceType": "Book",
+    "url": "https://eloquentjavascript.net/",
+    "thumbnail": "https://images.unsplash.com/photo-1555099962-4199c345e5dd?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "javascript",
+      "book",
+      "intermediate",
+      "oop",
+      "functional",
+      "node",
+      "haverbeke"
+    ],
+    "difficulty": "Intermediate",
+    "isFeatured": true
+  },
+  {
+    "title": "The Modern JavaScript Tutorial (javascript.info)",
+    "description": "From the very basics to advanced topics with simple, detailed explanations and interactive examples. Covers closures, prototypes, promises, async/await, generators, iterators, DOM manipulation, events, fetch API, and ES2024 features.",
+    "category": "JavaScript",
+    "resourceType": "Book",
+    "url": "https://javascript.info/",
+    "thumbnail": "https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "javascript",
+      "book",
+      "intermediate",
+      "es6",
+      "async",
+      "promises",
+      "dom"
+    ],
+    "difficulty": "Intermediate",
+    "isFeatured": true
+  },
+  {
+    "title": "You Don't Know JS Yet (YDKJS) – 6-Book Series (Kyle Simpson)",
+    "description": "Kyle Simpson’s acclaimed deep dive into JavaScript's deepest mechanisms: Scope & Closures, Objects & Classes, Types & Grammar, Sync & Async, and ES.Next. Completely open-source on GitHub.",
+    "category": "JavaScript",
+    "resourceType": "Book",
+    "url": "https://github.com/getify/You-Dont-Know-JS",
+    "thumbnail": "https://images.unsplash.com/photo-1623479322729-28b25c16b011?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "javascript",
+      "book",
+      "advanced",
+      "closures",
+      "prototypes",
+      "ydkjs",
+      "kyle simpson"
+    ],
+    "difficulty": "Advanced",
+    "isFeatured": true
+  },
+  {
+    "title": "Learning JavaScript Design Patterns (Addy Osmani)",
+    "description": "Explore classic and modern design patterns in JavaScript: Factory, Singleton, Observer, Mediator, Module, Command, Facade, Decorator, and MVVM patterns applied in modern production architectures.",
+    "category": "JavaScript",
+    "resourceType": "Book",
+    "url": "https://www.patterns.dev/posts/classic-design-patterns/",
+    "thumbnail": "https://images.unsplash.com/photo-1518773553398-650c184e0bb3?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "javascript",
+      "book",
+      "advanced",
+      "design patterns",
+      "addy osmani",
+      "architecture",
+      "solid"
+    ],
+    "difficulty": "Advanced",
+    "isFeatured": true
+  },
+  {
+    "title": "Scrimba: Learn Modern JavaScript Interactively",
+    "description": "An interactive video player where you pause the tutorial and type code right inside the video. Over 100 bite-sized interactive challenges covering variables, functions, objects, arrays, and DOM manipulation.",
+    "category": "JavaScript",
+    "resourceType": "Interactive Tool",
+    "url": "https://scrimba.com/learn/introtojavascript",
+    "thumbnail": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "javascript",
+      "interactive tool",
+      "beginner",
+      "scrimba",
+      "interactive",
+      "practice"
+    ],
+    "difficulty": "Beginner",
+    "isFeatured": true
+  },
+  {
+    "title": "LeetCode 30 Days of JavaScript (Official Study Plan)",
+    "description": "30 curated algorithmic challenges dedicated entirely to JavaScript features: closures, promises, function transformations, JSON parsing, array prototype modifications, and custom EventEmitter implementations.",
+    "category": "JavaScript",
+    "resourceType": "Interactive Tool",
+    "url": "https://leetcode.com/studyplan/30-days-of-javascript/",
+    "thumbnail": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "javascript",
+      "interactive tool",
+      "intermediate",
+      "leetcode",
+      "interview",
+      "challenges"
+    ],
+    "difficulty": "Intermediate",
+    "isFeatured": true
+  },
+  {
+    "title": "AST Explorer: JavaScript Abstract Syntax Tree Inspection Tool",
+    "description": "Interactive browser tool to parse and visualize how JavaScript code is translated into an Abstract Syntax Tree (AST) using Babel, ESLint, TypeScript, and Acorn. Essential for toolmakers and compiler engineers.",
+    "category": "JavaScript",
+    "resourceType": "Interactive Tool",
+    "url": "https://astexplorer.net/",
+    "thumbnail": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "javascript",
+      "interactive tool",
+      "advanced",
+      "ast",
+      "compilers",
+      "babel",
+      "v8"
+    ],
+    "difficulty": "Advanced",
+    "isFeatured": true
+  },
+  {
+    "title": "JSBench.me: JavaScript Performance Benchmark & Memory Profiler",
+    "description": "Online code performance playground allowing developers to benchmark and compare execution speeds of different JavaScript implementations, array algorithms, and DOM operations down to microseconds.",
+    "category": "JavaScript",
+    "resourceType": "Interactive Tool",
+    "url": "https://jsbench.me/",
+    "thumbnail": "https://images.unsplash.com/photo-1555099962-4199c345e5dd?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "javascript",
+      "interactive tool",
+      "advanced",
+      "benchmarking",
+      "performance",
+      "profiling"
+    ],
+    "difficulty": "Advanced",
+    "isFeatured": false
+  },
+  {
+    "title": "MDN: A Re-Introduction to JavaScript (Fundamentals Walkthrough)",
+    "description": "An elegant, comprehensive article summarizing all core JavaScript building blocks: types, operators, control structures, objects, arrays, and functions for developers starting or revisiting JS.",
+    "category": "JavaScript",
+    "resourceType": "Article",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript",
+    "thumbnail": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "javascript",
+      "article",
+      "beginner",
+      "mdn",
+      "fundamentals",
+      "overview"
+    ],
+    "difficulty": "Beginner",
+    "isFeatured": true
+  },
+  {
+    "title": "JavaScript Visualized: The Event Loop & Execution Context",
+    "description": "Lydia Hallie’s famous visual guide explaining the call stack, event loop, task queue, microtask queue, and Web APIs using clear GIF animations and diagrams. The best visual explanation of asynchronous JavaScript.",
+    "category": "JavaScript",
+    "resourceType": "Article",
+    "url": "https://dev.to/lydiahallie/javascript-visualized-event-loop-3dif",
+    "thumbnail": "https://images.unsplash.com/photo-1555099962-4199c345e5dd?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "javascript",
+      "article",
+      "intermediate",
+      "event loop",
+      "async",
+      "promises",
+      "microtasks"
+    ],
+    "difficulty": "Intermediate",
+    "isFeatured": true
+  },
+  {
+    "title": "JavaScript Visualized: Promises & Async/Await Internal Mechanics",
+    "description": "Crystal-clear animated walkthrough by Lydia Hallie explaining how Promise states change from pending to fulfilled/rejected, how Promise.all and Promise.race resolve, and how async/await pauses execution.",
+    "category": "JavaScript",
+    "resourceType": "Article",
+    "url": "https://dev.to/lydiahallie/javascript-visualized-promises-async-await-5gke",
+    "thumbnail": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "javascript",
+      "article",
+      "intermediate",
+      "promises",
+      "async await",
+      "animations"
+    ],
+    "difficulty": "Intermediate",
+    "isFeatured": true
+  },
+  {
+    "title": "V8 Engine Internals: Hidden Classes, Inline Caches & Garbage Collection",
+    "description": "Deep technical guide explaining how Google V8 optimizes JavaScript execution: Ignition interpreter, TurboFan optimizing compiler, hidden classes (Shapes), Inline Caches (IC), and Scavenge/Mark-Sweep GC algorithms.",
+    "category": "JavaScript",
+    "resourceType": "Article",
+    "url": "https://mathiasbynens.be/notes/shapes-ics",
+    "thumbnail": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "javascript",
+      "article",
+      "advanced",
+      "v8",
+      "turbofan",
+      "performance",
+      "memory"
+    ],
+    "difficulty": "Advanced",
+    "isFeatured": true
+  },
+  {
+    "title": "Modern JavaScript Cheatsheet & Quick Reference (Beginner)",
+    "description": "A printable cheatsheet covering JavaScript syntax fundamentals: variable declarations (const, let), primitive types, arithmetic and logical operators, if/else, loops, and basic array manipulations.",
+    "category": "JavaScript",
+    "resourceType": "Cheatsheet",
+    "url": "https://htmlcheatsheet.com/js/",
+    "thumbnail": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "javascript",
+      "cheatsheet",
+      "beginner",
+      "syntax",
+      "quick reference",
+      "printable"
+    ],
+    "difficulty": "Beginner",
+    "isFeatured": true
+  },
+  {
+    "title": "ES6 to ES2024 Modern Features Cheatsheet (Intermediate)",
+    "description": "Complete cheatsheet for modern ECMAScript: arrow functions, destructuring, spread/rest, template literals, optional chaining (?.), nullish coalescing (??), Promise combinators, and Object.fromEntries.",
+    "category": "JavaScript",
+    "resourceType": "Cheatsheet",
+    "url": "https://github.com/mbeaudru/modern-js-cheatsheet",
+    "thumbnail": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "javascript",
+      "cheatsheet",
+      "intermediate",
+      "es6",
+      "es2024",
+      "syntax",
+      "features"
+    ],
+    "difficulty": "Intermediate",
+    "isFeatured": true
+  },
+  {
+    "title": "Advanced JavaScript: Regex, Bitwise, Symbols & Big-O Cheatsheet",
+    "description": "High-density quick reference covering regular expression lookaheads/lookbehinds, bitwise operations for performance, Symbol registry, WeakMap garbage collection, and Big-O complexity for V8 array methods.",
+    "category": "JavaScript",
+    "resourceType": "Cheatsheet",
+    "url": "https://overapi.com/javascript",
+    "thumbnail": "https://images.unsplash.com/photo-1485796826113-174aa68fd81b?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "javascript",
+      "cheatsheet",
+      "advanced",
+      "regex",
+      "bitwise",
+      "symbols",
+      "big-o",
+      "v8"
+    ],
+    "difficulty": "Advanced",
+    "isFeatured": true
+  },
+  {
+    "title": "freeCodeCamp: Responsive Web Design Certification",
+    "description": "Learn modern HTML5, CSS3, Flexbox, CSS Grid, media queries, accessibility principles, and responsive design patterns by building 5 real-world certified projects. Completely free with verified certification.",
+    "category": "HTML and CSS",
+    "resourceType": "Course",
+    "url": "https://www.freecodecamp.org/learn/2022/responsive-web-design/",
+    "thumbnail": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "freecodecamp",
+      "html5",
+      "css3",
+      "flexbox",
+      "grid",
+      "responsive"
+    ],
+    "difficulty": "Beginner",
+    "isFeatured": true
+  },
+  {
+    "title": "React Official Documentation & Interactive Sandbox",
+    "description": "The redesigned official React documentation featuring interactive sandboxes, deep dives into state preservation, effects, custom hooks, context, reducers, refs, portals, error boundaries, Suspense, and React Server Components.",
+    "category": "React JS",
+    "resourceType": "Documentation",
+    "url": "https://react.dev/learn",
+    "thumbnail": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "react",
+      "hooks",
+      "virtual dom",
+      "frontend",
+      "components",
+      "suspense"
+    ],
+    "difficulty": "Beginner",
+    "isFeatured": true
+  },
+  {
+    "title": "Scrimba: Learn React for Free – Bob Ziroll",
+    "description": "An interactive React course where you can edit code directly inside the video player. Covers JSX, props, state, event handling, useEffect, forms, API calls, and building 8 real React projects.",
+    "category": "React JS",
+    "resourceType": "Course",
+    "url": "https://scrimba.com/learn-react-c0e",
+    "thumbnail": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "react",
+      "scrimba",
+      "interactive",
+      "jsx",
+      "hooks",
+      "beginner"
+    ],
+    "difficulty": "Beginner",
+    "isFeatured": true
+  },
+  {
+    "title": "CS50x: Introduction to Computer Science – Harvard",
+    "description": "Harvard legendary entry point into computer science. Covers C programming, algorithms, data structures, Python, SQL, HTML/CSS/JavaScript, and Flask — culminating in a self-designed final project.",
+    "category": "Full Stack Development",
+    "resourceType": "Course",
+    "url": "https://cs50.harvard.edu/x/",
+    "thumbnail": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "harvard",
+      "cs50",
+      "c",
+      "python",
+      "algorithms",
+      "foundations",
+      "fullstack"
+    ],
+    "difficulty": "Beginner",
+    "isFeatured": true
+  },
+  {
+    "title": "CS50P: Introduction to Python – Harvard Free Course",
+    "description": "Harvard free Introduction to Programming with Python. Covers functions, variables, conditionals, loops, exceptions, libraries, file I/O, regular expressions, and object-oriented programming.",
+    "category": "Python",
+    "resourceType": "Course",
+    "url": "https://cs50.harvard.edu/python/",
+    "thumbnail": "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "python",
+      "harvard",
+      "cs50",
+      "beginner",
+      "oop",
+      "functions",
+      "exceptions"
+    ],
+    "difficulty": "Beginner",
+    "isFeatured": true
+  },
+  {
+    "title": "Traversy Media: Node.js & Express Crash Course",
+    "description": "Brad Traversy popular Node.js and Express crash course covering project setup, routing, middleware, REST APIs, and MongoDB integration with Mongoose in a single practical session.",
+    "category": "Node.js and Express",
+    "resourceType": "Video",
+    "url": "https://www.youtube.com/watch?v=L72fhGm1tfE",
+    "thumbnail": "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "express",
+      "nodejs",
+      "crash course",
+      "traversy",
+      "youtube"
+    ],
+    "difficulty": "Beginner",
+    "isFeatured": false
+  },
+  {
+    "title": "MongoDB University – Free Developer Learning Paths",
+    "description": "Official free courses by MongoDB covering data modeling, CRUD operations, indexing strategies, aggregation framework pipelines, Atlas cloud configuration, transactions, and performance tuning.",
+    "category": "MongoDB and Databases",
+    "resourceType": "Course",
+    "url": "https://learn.mongodb.com/",
+    "thumbnail": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "mongodb",
+      "nosql",
+      "databases",
+      "atlas",
+      "aggregation",
+      "indexing"
+    ],
+    "difficulty": "Beginner",
+    "isFeatured": true
+  },
+  {
+    "title": "NeetCode: Algorithms & LeetCode Roadmap",
+    "description": "Structured visual video walkthroughs of all fundamental DSA patterns — arrays, two pointers, sliding window, binary search, linked lists, stacks, queues, trees, heaps, graphs, and dynamic programming.",
+    "category": "Data Structures and Algorithms",
+    "resourceType": "Video",
+    "url": "https://neetcode.io/practice",
+    "thumbnail": "https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "dsa",
+      "algorithms",
+      "leetcode",
+      "neetcode",
+      "interviews",
+      "patterns"
+    ],
+    "difficulty": "Intermediate",
+    "isFeatured": true
+  },
+  {
+    "title": "Tech Interview Handbook – Free Interview Prep",
+    "description": "Curated study plans, behavioral interview questions, algorithm cheatsheets, resume templates, salary negotiation strategies, and system design resources curated by former Meta engineers.",
+    "category": "Interview Preparation",
+    "resourceType": "Cheatsheet",
+    "url": "https://www.techinterviewhandbook.org/",
+    "thumbnail": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "interviews",
+      "coding test",
+      "behavioral",
+      "resume",
+      "prep",
+      "faang"
+    ],
+    "difficulty": "All Levels",
+    "isFeatured": true
+  },
+  {
+    "title": "Refactoring UI – Practical UI Design for Developers",
+    "description": "Actionable tips and visual patterns to design clean, professional user interfaces without guesswork. Covers typography hierarchy, color system design, spacing scale, shadow design, and WCAG accessibility.",
+    "category": "UI/UX Design",
+    "resourceType": "Article",
+    "url": "https://www.refactoringui.com/",
+    "thumbnail": "https://images.unsplash.com/photo-1581291518655-9523c932edcf?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "design",
+      "ui",
+      "ux",
+      "typography",
+      "color",
+      "spacing",
+      "wcag"
+    ],
+    "difficulty": "Beginner",
+    "isFeatured": true
+  },
+  {
+    "title": "Java Programming MOOC – University of Helsinki",
+    "description": "A renowned two-part open online course on Java fundamentals and advanced topics. Covers variables, control flow, OOP (inheritance, polymorphism, interfaces), unit testing with JUnit 5, generics, and streams.",
+    "category": "Java",
+    "resourceType": "Course",
+    "url": "https://java-programming.mooc.fi/",
+    "thumbnail": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "java",
+      "oop",
+      "junit",
+      "backend",
+      "mooc",
+      "lambdas",
+      "streams"
+    ],
+    "difficulty": "Beginner",
+    "isFeatured": true
+  },
+  {
+    "title": "CS50 Web Programming with Python and JavaScript",
+    "description": "Harvard University deep dive into design and implementation of web apps with Python, JavaScript, and SQL using frameworks like Django, React, and Bootstrap. Build 5 major dynamic web apps.",
+    "category": "Free Coding Courses",
+    "resourceType": "Course",
+    "url": "https://cs50.harvard.edu/web/",
+    "thumbnail": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "harvard",
+      "cs50w",
+      "django",
+      "javascript",
+      "sql",
+      "fullstack",
+      "free course"
+    ],
+    "difficulty": "Intermediate",
+    "isFeatured": true
+  },
+  {
+    "title": "Docker & DevOps for Full Stack Developers",
+    "description": "Learn to containerize full-stack applications using Docker and Docker Compose. Covers Dockerfile, multi-stage builds, volumes, networks, docker-compose for Node/MongoDB/React stacks, and GitHub Actions CI/CD.",
+    "category": "DevOps & Cloud",
+    "resourceType": "Course",
+    "url": "https://fullstackopen.com/en/part12",
+    "thumbnail": "https://images.unsplash.com/photo-1646617747609-45b466ace9a6?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "docker",
+      "devops",
+      "fullstack",
+      "ci/cd",
+      "github actions",
+      "containers"
+    ],
+    "difficulty": "Intermediate",
+    "isFeatured": true
+  },
+  {
+    "title": "The Odin Project: Foundations Curriculum",
+    "description": "The proven hands-on, open-source curriculum that has helped thousands become professional web developers. Covers how the web works, Git & GitHub, command line, HTML, CSS, Flexbox, responsive design, and JavaScript fundamentals from scratch with real code projects.",
+    "category": "Free Coding Courses",
+    "resourceType": "Course",
+    "url": "https://www.theodinproject.com/paths/foundations/courses/foundations",
+    "thumbnail": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "the odin project",
+      "foundations",
+      "full stack",
+      "git",
+      "html",
+      "css",
+      "javascript",
+      "beginner"
+    ],
+    "difficulty": "Beginner",
+    "isFeatured": true
+  },
+  {
+    "title": "MIT OpenCourseWare: Introduction to Computer Science and Programming in Python",
+    "description": "MIT's foundational 6.0001 course designed to provide learners with an understanding of the role computation can play in solving problems, and to help students feel justifiably confident of their ability to write small programs that allow them to accomplish useful goals.",
+    "category": "Free Coding Courses",
+    "resourceType": "Course",
+    "url": "https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/",
+    "thumbnail": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "mit",
+      "python",
+      "computer science",
+      "algorithms",
+      "opencourseware",
+      "intermediate"
+    ],
+    "difficulty": "Intermediate",
+    "isFeatured": false
+  },
+  {
+    "title": "freeCodeCamp: Scientific Computing with Python Certification",
+    "description": "Master Python fundamentals including variables, loops, conditionals, functions, object-oriented programming, data structures, and algorithms. Complete 5 interactive certification projects and earn a verified free certificate.",
+    "category": "Free Coding Courses",
+    "resourceType": "Course",
+    "url": "https://www.freecodecamp.org/learn/scientific-computing-with-python/",
+    "thumbnail": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "freecodecamp",
+      "python",
+      "certification",
+      "data",
+      "algorithms",
+      "beginner"
+    ],
+    "difficulty": "Beginner",
+    "isFeatured": false
+  },
+  {
+    "title": "University of Helsinki: Full Stack Open 2025 (Deep Dive)",
+    "description": "Learn React, Redux, Node.js, Express, MongoDB, GraphQL, TypeScript, and CI/CD. This course serves as an introduction to modern web application development with JavaScript, taught by the University of Helsinki with free ECTS credits available.",
+    "category": "Free Coding Courses",
+    "resourceType": "Course",
+    "url": "https://fullstackopen.com/en/",
+    "thumbnail": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "helsinki",
+      "full stack open",
+      "react",
+      "node",
+      "graphql",
+      "typescript",
+      "advanced"
+    ],
+    "difficulty": "Advanced",
+    "isFeatured": true
+  },
+  {
+    "title": "Docker Official Documentation & Get Started Guide",
+    "description": "The official interactive tutorial and hands-on guide for Docker containerization. Learn container lifecycle, Dockerfiles, multi-stage builds, port mappings, volumes, Docker Compose, and networking for production deployments.",
+    "category": "DevOps & Cloud",
+    "resourceType": "Documentation",
+    "url": "https://docs.docker.com/get-started/",
+    "thumbnail": "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "docker",
+      "containers",
+      "devops",
+      "compose",
+      "dockerfile",
+      "beginner"
+    ],
+    "difficulty": "Beginner",
+    "isFeatured": true
+  },
+  {
+    "title": "Kubernetes The Hard Way (Kelsey Hightower)",
+    "description": "Bootstrap Kubernetes the hard way without automated installers. This in-depth tutorial walks you through setting up a production-ready Kubernetes cluster from scratch, understanding TLS certificates, etcd, control plane, and CNI networking.",
+    "category": "DevOps & Cloud",
+    "resourceType": "Interactive Tool",
+    "url": "https://github.com/kelseyhightower/kubernetes-the-hard-way",
+    "thumbnail": "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "kubernetes",
+      "k8s",
+      "devops",
+      "cloud",
+      "clustering",
+      "advanced"
+    ],
+    "difficulty": "Advanced",
+    "isFeatured": true
+  },
+  {
+    "title": "Linux Journey: Learn Linux from Command Line to Systems Administration",
+    "description": "A free, beautifully structured interactive site for learning the Linux command line, filesystem hierarchy, permissions, process management, shell scripting, package management, and system monitoring.",
+    "category": "DevOps & Cloud",
+    "resourceType": "Interactive Tool",
+    "url": "https://linuxjourney.com/",
+    "thumbnail": "https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "linux",
+      "bash",
+      "terminal",
+      "sysadmin",
+      "devops",
+      "beginner"
+    ],
+    "difficulty": "Beginner",
+    "isFeatured": false
+  },
+  {
+    "title": "AWS Skill Builder: AWS Cloud Practitioner Free Essentials",
+    "description": "Amazon Web Services official free fundamental training course covering cloud concepts, security, EC2, S3, RDS, Lambda serverless, VPC networking, pricing, and architecture best practices for AWS certifications.",
+    "category": "DevOps & Cloud",
+    "resourceType": "Course",
+    "url": "https://explore.skillbuilder.aws/learn/course/external/view/elearning/134/aws-cloud-practitioner-essentials",
+    "thumbnail": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "aws",
+      "cloud",
+      "devops",
+      "ec2",
+      "s3",
+      "serverless",
+      "intermediate"
+    ],
+    "difficulty": "Intermediate",
+    "isFeatured": false
+  },
+  {
+    "title": "GitHub Actions: CI/CD Pipeline Automation Guide",
+    "description": "Learn how to automate software testing, linting, building, and deployment workflows directly inside GitHub repositories with custom actions, secrets, triggers, and matrix builds.",
+    "category": "DevOps & Cloud",
+    "resourceType": "Article",
+    "url": "https://docs.github.com/en/actions",
+    "thumbnail": "https://images.unsplash.com/photo-1618401471353-b98aedd04e11?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "github actions",
+      "ci/cd",
+      "automation",
+      "devops",
+      "testing",
+      "intermediate"
+    ],
+    "difficulty": "Intermediate",
+    "isFeatured": false
+  },
+  {
+    "title": "The System Design Primer (Donne Martin)",
+    "description": "The #1 open source repository for learning how to design large-scale systems at FAANG scale. Covers scalability, load balancers, reverse proxies, database sharding, caching, asynchronous message queues, microservices, and CAP theorem.",
+    "category": "Interview Preparation",
+    "resourceType": "Documentation",
+    "url": "https://github.com/donnemartin/system-design-primer",
+    "thumbnail": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "system design",
+      "distributed systems",
+      "scalability",
+      "microservices",
+      "advanced"
+    ],
+    "difficulty": "Advanced",
+    "isFeatured": true
+  },
+  {
+    "title": "Grind 75: Smart LeetCode Schedule Planner",
+    "description": "Created by the author of Blind 75, Grind 75 lets you customize a coding interview preparation schedule based on hours per week, difficulty level, and topic priority with complete code solutions.",
+    "category": "Interview Preparation",
+    "resourceType": "Interactive Tool",
+    "url": "https://www.techinterviewhandbook.org/grind75",
+    "thumbnail": "https://images.unsplash.com/photo-1484417894907-623942c8ec29?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "grind 75",
+      "leetcode",
+      "dsa",
+      "interview",
+      "study plan",
+      "intermediate"
+    ],
+    "difficulty": "Intermediate",
+    "isFeatured": false
+  },
+  {
+    "title": "React Internals Deep Dive: Fiber Architecture & Reconciler",
+    "description": "An in-depth technical breakdown of how React works under the hood. Covers workInProgress trees, the double-buffering fiber architecture, Lane priority models, concurrency mechanics, and synthetic events.",
+    "category": "React JS",
+    "resourceType": "Article",
+    "url": "https://github.com/acdlite/react-fiber-architecture",
+    "thumbnail": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "react",
+      "fiber",
+      "internals",
+      "performance",
+      "advanced",
+      "architecture"
+    ],
+    "difficulty": "Advanced",
+    "isFeatured": true
+  },
+  {
+    "title": "React Patterns & Architecture: Clean Architecture in React",
+    "description": "Master advanced React architecture patterns including compound components, control props, custom hook abstraction, performance memoization with useMemo/useCallback, and clean state management.",
+    "category": "React JS",
+    "resourceType": "Book",
+    "url": "https://reactpatterns.com/",
+    "thumbnail": "https://images.unsplash.com/photo-1581291518655-9523c932deda?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "react",
+      "patterns",
+      "architecture",
+      "clean code",
+      "hooks",
+      "advanced"
+    ],
+    "difficulty": "Advanced",
+    "isFeatured": false
+  },
+  {
+    "title": "Fluent Python & Advanced Python Programming Guide",
+    "description": "Dive deep into Python metaclasses, dunder magic methods, generators, coroutines, async/await with asyncio, decorators, memory profiling, and high-performance concurrency patterns in CPython.",
+    "category": "Python",
+    "resourceType": "Book",
+    "url": "https://realpython.com/learning-paths/advanced-python-concepts/",
+    "thumbnail": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "python",
+      "asyncio",
+      "metaclasses",
+      "generators",
+      "advanced",
+      "performance"
+    ],
+    "difficulty": "Advanced",
+    "isFeatured": false
+  },
+  {
+    "title": "CSS Architecture for Scalable Web Applications & Modern Layouts",
+    "description": "Master modern CSS features including CSS Grid subgrids, container queries, @layer cascade management, CSS custom properties theming, fluid typography with clamp(), and accessible animations.",
+    "category": "HTML and CSS",
+    "resourceType": "Article",
+    "url": "https://web.dev/learn/css/",
+    "thumbnail": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "css",
+      "grid",
+      "container queries",
+      "layers",
+      "advanced",
+      "responsive"
+    ],
+    "difficulty": "Advanced",
+    "isFeatured": false
+  },
+  {
+    "title": "MDN Web Docs: HTML & CSS Learning Guide",
+    "description": "The definitive open-source documentation and interactive learning guide for HTML, CSS, JavaScript, and modern Web APIs maintained by Mozilla. Covers semantic HTML5 elements, form validation, flexbox, grid, animations, CSS custom properties, and web accessibility from absolute beginner to advanced.",
+    "category": "HTML and CSS",
+    "resourceType": "Documentation",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn",
+    "thumbnail": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "mdn",
+      "html5",
+      "css3",
+      "web apis",
+      "standards",
+      "semantic"
+    ],
+    "difficulty": "Beginner",
+    "isFeatured": true
+  },
+  {
+    "title": "CSS-Tricks: Complete Flexbox & Grid Guide",
+    "description": "The most comprehensive visual reference guide to CSS Flexbox and CSS Grid on the internet. Every property documented with beautiful interactive diagrams — flex-direction, justify-content, align-items, grid-template-columns, grid-area, auto-placement, and real-world layout examples.",
+    "category": "HTML and CSS",
+    "resourceType": "Article",
+    "url": "https://css-tricks.com/snippets/css/a-guide-to-flexbox/",
+    "thumbnail": "https://images.unsplash.com/photo-1545670723-196ed0954986?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "flexbox",
+      "css grid",
+      "layout",
+      "alignment",
+      "css-tricks",
+      "responsive"
+    ],
+    "difficulty": "Beginner",
+    "isFeatured": false
+  },
+  {
+    "title": "Kevin Powell: CSS for Beginners (YouTube)",
+    "description": "Kevin Powell is widely regarded as the CSS king of YouTube. His free playlist covers CSS selectors, specificity, the box model, positioning, pseudo-elements, CSS variables, media queries, animations, transitions, and modern layout techniques like grid and flexbox in an engaging, practical style.",
+    "category": "HTML and CSS",
+    "resourceType": "Video",
+    "url": "https://www.youtube.com/@KevinPowell",
+    "thumbnail": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "css",
+      "kevin powell",
+      "youtube",
+      "animations",
+      "variables",
+      "layout"
+    ],
+    "difficulty": "Beginner",
+    "isFeatured": true
+  },
+  {
+    "title": "W3Schools HTML & CSS Interactive Reference",
+    "description": "Comprehensive reference and interactive practice environment for all HTML tags and CSS properties. Includes try-it editors, color pickers, quizzes, and exercises covering HTML5 semantic elements, CSS3 transitions, Bootstrap, and responsive breakpoints. Perfect quick-reference for developers.",
+    "category": "HTML and CSS",
+    "resourceType": "Interactive Tool",
+    "url": "https://www.w3schools.com/html/",
+    "thumbnail": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "w3schools",
+      "html",
+      "css",
+      "interactive",
+      "reference",
+      "exercises"
+    ],
+    "difficulty": "Beginner",
+    "isFeatured": false
+  },
+  {
+    "title": "HTML5 & CSS3 Design Patterns – Smashing Magazine",
+    "description": "Collection of advanced CSS techniques and HTML5 patterns from Smashing Magazine covering CSS custom properties (variables), container queries, cascade layers, CSS animations with keyframes, blend modes, clip-path shapes, scroll-driven animations, and modern browser feature detection.",
+    "category": "HTML and CSS",
+    "resourceType": "Article",
+    "url": "https://www.smashingmagazine.com/category/css/",
+    "thumbnail": "https://images.unsplash.com/photo-1621839673705-6617adf9e890?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "css",
+      "html5",
+      "animations",
+      "container queries",
+      "cascade layers",
+      "advanced"
+    ],
+    "difficulty": "Intermediate",
+    "isFeatured": false
+  },
+  {
+    "title": "The HTML & CSS Cheatsheet – Beginner to Advanced",
+    "description": "A beautifully designed, printable cheatsheet covering every HTML5 tag, CSS3 property, flexbox properties, grid properties, CSS selectors (pseudo-classes, pseudo-elements), CSS units (rem, em, vh, vw), media query breakpoints, and common CSS patterns used in production.",
+    "category": "HTML and CSS",
+    "resourceType": "Cheatsheet",
+    "url": "https://htmlcheatsheet.com/",
+    "thumbnail": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "html",
+      "css",
+      "cheatsheet",
+      "reference",
+      "selectors",
+      "units"
+    ],
+    "difficulty": "All Levels",
+    "isFeatured": false
+  },
+  {
+    "title": "Full Stack Open – React & Redux Deep Dive",
+    "description": "University of Helsinki's world-class free course. Parts 1–5 cover React fundamentals, hooks, component state, REST APIs, testing with React Testing Library, Redux Toolkit, React Router v6, and custom hooks with real, graded project exercises.",
+    "category": "React JS",
+    "resourceType": "Course",
+    "url": "https://fullstackopen.com/en/part1",
+    "thumbnail": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "react",
+      "redux",
+      "hooks",
+      "testing",
+      "router",
+      "helsinki"
+    ],
+    "difficulty": "Intermediate",
+    "isFeatured": true
+  },
+  {
+    "title": "React Router v6 Official Documentation",
+    "description": "Official documentation for React Router v6 — the standard client-side routing solution for React SPAs. Covers routes, nested routes, dynamic segments, loaders, actions, error elements, lazy loading routes, and the powerful new data APIs introduced in v6.4.",
+    "category": "React JS",
+    "resourceType": "Documentation",
+    "url": "https://reactrouter.com/en/main",
+    "thumbnail": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "react router",
+      "routing",
+      "spa",
+      "loaders",
+      "nested routes",
+      "v6"
+    ],
+    "difficulty": "Intermediate",
+    "isFeatured": false
+  },
+  {
+    "title": "React State Management – Context, Zustand & Redux Toolkit",
+    "description": "A practical guide comparing all major React state management approaches — local state, Context API, useReducer, Zustand, Jotai, and Redux Toolkit. Covers when to use each solution, performance pitfalls, re-render optimization, and real project patterns for scalable apps.",
+    "category": "React JS",
+    "resourceType": "Article",
+    "url": "https://react.dev/learn/managing-state",
+    "thumbnail": "https://images.unsplash.com/photo-1537884944318-390069bb8665?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "react",
+      "state management",
+      "context",
+      "zustand",
+      "redux",
+      "hooks"
+    ],
+    "difficulty": "Intermediate",
+    "isFeatured": false
+  },
+  {
+    "title": "React + Vite + TypeScript – Production Setup Guide",
+    "description": "A complete guide to bootstrapping a production-ready React app with Vite, TypeScript, ESLint, Prettier, Vitest for unit testing, React Testing Library, Husky pre-commit hooks, absolute imports, and path aliases. Covers best project architecture patterns for large teams.",
+    "category": "React JS",
+    "resourceType": "Article",
+    "url": "https://vitejs.dev/guide/",
+    "thumbnail": "https://images.unsplash.com/photo-1592609931041-40265b692757?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "react",
+      "vite",
+      "typescript",
+      "testing",
+      "eslint",
+      "project setup"
+    ],
+    "difficulty": "Intermediate",
+    "isFeatured": true
+  },
+  {
+    "title": "Fireship: React in 100 Seconds (YouTube)",
+    "description": "Fireship's lightning-fast React conceptual overview — virtual DOM, JSX, components, state, hooks, React 18 features like concurrent mode, transitions, Suspense, and the React ecosystem including Next.js and Remix, explained in an incredibly engaging, visual format.",
+    "category": "React JS",
+    "resourceType": "Video",
+    "url": "https://www.youtube.com/watch?v=Tn6-PIqc4UM",
+    "thumbnail": "https://images.unsplash.com/photo-1617040619263-41c5a9ca7521?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "react",
+      "fireship",
+      "youtube",
+      "hooks",
+      "jsx",
+      "overview"
+    ],
+    "difficulty": "Beginner",
+    "isFeatured": false
+  },
+  {
+    "title": "Node.js Official Documentation & Learning Path",
+    "description": "Master asynchronous programming, the event loop, stream architectures, buffers, worker threads, file system operations, the HTTP module, child processes, and microservices in Node.js. The official guide covers everything from installation to building production-ready APIs.",
+    "category": "Node.js and Express",
+    "resourceType": "Documentation",
+    "url": "https://nodejs.org/en/learn",
+    "thumbnail": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "nodejs",
+      "backend",
+      "streams",
+      "event loop",
+      "async",
+      "http"
+    ],
+    "difficulty": "Intermediate",
+    "isFeatured": true
+  },
+  {
+    "title": "Express.js Official Guide & API Reference",
+    "description": "The official Express.js documentation covering routing, middleware, template engines, error handling, static files, request/response objects, and advanced patterns like router-level middleware, multer file uploads, express-validator, and rate limiting for production APIs.",
+    "category": "Node.js and Express",
+    "resourceType": "Documentation",
+    "url": "https://expressjs.com/en/guide/routing.html",
+    "thumbnail": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "express",
+      "routing",
+      "middleware",
+      "rest api",
+      "nodejs",
+      "backend"
+    ],
+    "difficulty": "Intermediate",
+    "isFeatured": false
+  },
+  {
+    "title": "Node.js Design Patterns – Professional Book",
+    "description": "An in-depth book on professional Node.js design covering the module system, asynchronous control flows, streams, creational/structural/behavioral design patterns, messaging systems, universal JavaScript, and scalable microservices architecture using Node.js.",
+    "category": "Node.js and Express",
+    "resourceType": "Book",
+    "url": "https://www.nodejsdesignpatterns.com/",
+    "thumbnail": "https://images.unsplash.com/photo-1483817101829-339b08e8d83f?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "nodejs",
+      "design patterns",
+      "streams",
+      "microservices",
+      "advanced",
+      "async"
+    ],
+    "difficulty": "Advanced",
+    "isFeatured": false
+  },
+  {
+    "title": "JWT Authentication with Node.js & Express – Full Guide",
+    "description": "A complete, practical guide to implementing JWT-based authentication in Node.js with Express. Covers user registration, password hashing with bcrypt, login, JWT token generation, refresh tokens, protected routes, role-based access control, and secure HTTP-only cookie storage.",
+    "category": "Node.js and Express",
+    "resourceType": "Article",
+    "url": "https://jwt.io/introduction",
+    "thumbnail": "https://images.unsplash.com/photo-1614624532983-4ce03382d63d?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "jwt",
+      "authentication",
+      "express",
+      "nodejs",
+      "security",
+      "bcrypt"
+    ],
+    "difficulty": "Intermediate",
+    "isFeatured": true
+  },
+  {
+    "title": "REST API Design Best Practices – Node.js & Express",
+    "description": "Comprehensive guide covering REST API design principles — resource naming conventions, HTTP methods and status codes, pagination strategies, filtering, sorting, API versioning, HATEOAS, OpenAPI/Swagger documentation, rate limiting, and API security with Helmet and CORS.",
+    "category": "Node.js and Express",
+    "resourceType": "Article",
+    "url": "https://restfulapi.net/",
+    "thumbnail": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "rest api",
+      "express",
+      "nodejs",
+      "http",
+      "design",
+      "swagger"
+    ],
+    "difficulty": "Intermediate",
+    "isFeatured": false
+  },
+  {
+    "title": "Mongoose Official Documentation",
+    "description": "Complete documentation for Mongoose — the elegant MongoDB object modeling library for Node.js. Covers schemas, models, CRUD queries, validation, middleware (pre/post hooks), virtuals, population (JOINs between collections), aggregation pipelines, and multi-document transactions.",
+    "category": "MongoDB and Databases",
+    "resourceType": "Documentation",
+    "url": "https://mongoosejs.com/docs/",
+    "thumbnail": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "mongoose",
+      "mongodb",
+      "schema",
+      "validation",
+      "population",
+      "nodejs"
+    ],
+    "difficulty": "Intermediate",
+    "isFeatured": false
+  },
+  {
+    "title": "SQLBolt: Interactive SQL Lessons from Scratch",
+    "description": "Learn SQL interactively through 20 step-by-step lessons directly in the browser. Covers SELECT queries, WHERE filtering, ORDER BY, aggregate functions, GROUP BY, JOINs (inner, outer, cross), subqueries, INSERT/UPDATE/DELETE, and database normalization principles.",
+    "category": "MongoDB and Databases",
+    "resourceType": "Interactive Tool",
+    "url": "https://sqlbolt.com/",
+    "thumbnail": "https://images.unsplash.com/photo-1609921212029-bb5a28e60960?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "sql",
+      "database",
+      "interactive",
+      "queries",
+      "joins",
+      "relational"
+    ],
+    "difficulty": "Beginner",
+    "isFeatured": true
+  },
+  {
+    "title": "PostgreSQL Tutorial – The Complete Reference",
+    "description": "An exhaustive, free online PostgreSQL reference covering installation, data types, SELECT, INSERT, UPDATE, DELETE, transactions, indexing, stored procedures, triggers, views, CTEs (Common Table Expressions), full-text search, JSONB support, and performance optimization.",
+    "category": "MongoDB and Databases",
+    "resourceType": "Documentation",
+    "url": "https://www.postgresqltutorial.com/",
+    "thumbnail": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "postgresql",
+      "sql",
+      "database",
+      "relational",
+      "transactions",
+      "json"
+    ],
+    "difficulty": "Intermediate",
+    "isFeatured": false
+  },
+  {
+    "title": "MongoDB Aggregation Pipeline – Full Crash Course",
+    "description": "A deep dive into the MongoDB Aggregation Framework — $match, $group, $project, $sort, $limit, $skip, $lookup (joins between collections), $unwind, $facet, $bucket, and $graphLookup. Includes practical real-world examples for analytics, reporting, and dashboard data.",
+    "category": "MongoDB and Databases",
+    "resourceType": "Video",
+    "url": "https://www.youtube.com/watch?v=A3jvoE0jGdE",
+    "thumbnail": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "mongodb",
+      "aggregation",
+      "pipeline",
+      "$lookup",
+      "$group",
+      "analytics"
+    ],
+    "difficulty": "Advanced",
+    "isFeatured": false
+  },
+  {
+    "title": "Database Design & Normalization – Full Course",
+    "description": "Learn relational database design from scratch — ER diagrams, entity relationships, primary and foreign keys, 1NF, 2NF, 3NF and BCNF normalization forms, denormalization trade-offs, B-tree indexing strategies, query optimization with EXPLAIN, and schema migration techniques.",
+    "category": "MongoDB and Databases",
+    "resourceType": "Course",
+    "url": "https://www.studytonight.com/dbms/",
+    "thumbnail": "https://images.unsplash.com/photo-1537884944318-390069bb8665?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "database design",
+      "normalization",
+      "er diagram",
+      "sql",
+      "dbms",
+      "indexing"
+    ],
+    "difficulty": "Intermediate",
+    "isFeatured": false
+  },
+  {
+    "title": "The Odin Project: Full Stack JavaScript Curriculum",
+    "description": "A complete, hands-on, free open-source curriculum providing real project-based learning for Full Stack JavaScript with Node/Express/React. Covers Git, command line, databases, deployment, testing, and career preparation through dozens of portfolio projects.",
+    "category": "Full Stack Development",
+    "resourceType": "Course",
+    "url": "https://www.theodinproject.com/",
+    "thumbnail": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "fullstack",
+      "projects",
+      "javascript",
+      "git",
+      "career",
+      "odin"
+    ],
+    "difficulty": "Beginner",
+    "isFeatured": true
+  },
+  {
+    "title": "Roadmap.sh – Full Stack Developer Roadmap",
+    "description": "Community-curated, visually rich developer roadmaps covering every skill needed for frontend, backend, and full-stack development. Includes recommended resources, step-by-step learning order, and role-based tracks for DevOps, Android, React, Node.js, and AI engineering.",
+    "category": "Full Stack Development",
+    "resourceType": "Cheatsheet",
+    "url": "https://roadmap.sh/full-stack",
+    "thumbnail": "https://images.unsplash.com/photo-1508830524289-0adcbe822b40?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "roadmap",
+      "fullstack",
+      "learning path",
+      "frontend",
+      "backend",
+      "devops"
+    ],
+    "difficulty": "All Levels",
+    "isFeatured": true
+  },
+  {
+    "title": "MERN Stack from Scratch – Traversy Media",
+    "description": "Brad Traversy's comprehensive MERN (MongoDB, Express, React, Node.js) stack course building a full-featured application from scratch. Covers React components, Redux state, JWT authentication, Mongoose models, REST API design, and cloud deployment on Render and Vercel.",
+    "category": "Full Stack Development",
+    "resourceType": "Video",
+    "url": "https://www.traversymedia.com/",
+    "thumbnail": "https://images.unsplash.com/photo-1589652717521-10c0d7e7d604?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "mern",
+      "mongodb",
+      "express",
+      "react",
+      "nodejs",
+      "fullstack",
+      "traversy"
+    ],
+    "difficulty": "Intermediate",
+    "isFeatured": false
+  },
+  {
+    "title": "Google UX Design Certificate – Coursera",
+    "description": "Google's professional UX design certification covering UX research methods, wireframing, low-fidelity and high-fidelity prototyping in Figma, usability testing, accessibility principles, inclusive design, and building a complete UX portfolio. Free to audit.",
+    "category": "UI/UX Design",
+    "resourceType": "Course",
+    "url": "https://www.coursera.org/professional-certificates/google-ux-design",
+    "thumbnail": "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "ux",
+      "ui",
+      "google",
+      "figma",
+      "research",
+      "accessibility",
+      "portfolio"
+    ],
+    "difficulty": "Beginner",
+    "isFeatured": true
+  },
+  {
+    "title": "Figma for Beginners – Official Design Crash Course",
+    "description": "Master Figma's auto-layout, responsive component variants, typography tokens, vector pen tool, prototyping animations, developer handoff mode, and design system organization. Includes Figma's official free resource library tutorials for web and mobile design.",
+    "category": "UI/UX Design",
+    "resourceType": "Video",
+    "url": "https://www.figma.com/resource-library/design-basics/",
+    "thumbnail": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "figma",
+      "prototyping",
+      "wireframing",
+      "design system",
+      "auto-layout",
+      "tokens"
+    ],
+    "difficulty": "Beginner",
+    "isFeatured": false
+  },
+  {
+    "title": "Laws of UX – Design Psychology Principles",
+    "description": "A beautiful, interactive collection of key psychological principles every designer should know — Fitts's Law, Hick's Law, Miller's Law, Jakob's Law, the Aesthetic-Usability Effect, and Tesler's Law. Essential for understanding why excellent design feels naturally intuitive.",
+    "category": "UI/UX Design",
+    "resourceType": "Article",
+    "url": "https://lawsofux.com/",
+    "thumbnail": "https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "ux",
+      "psychology",
+      "design principles",
+      "heuristics",
+      "usability",
+      "fitts"
+    ],
+    "difficulty": "Intermediate",
+    "isFeatured": false
+  },
+  {
+    "title": "Design Systems & Storybook – Component Libraries",
+    "description": "Learn to build scalable, reusable component design systems with Storybook. Covers component documentation, design token architecture, theming, visual accessibility testing, design-to-code workflows, and integrating design systems with React, Vue, or Angular codebases.",
+    "category": "UI/UX Design",
+    "resourceType": "Documentation",
+    "url": "https://storybook.js.org/tutorials/",
+    "thumbnail": "https://images.unsplash.com/photo-1607798748738-b15c40d33d57?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "design system",
+      "storybook",
+      "components",
+      "tokens",
+      "react",
+      "accessibility"
+    ],
+    "difficulty": "Intermediate",
+    "isFeatured": false
+  },
+  {
+    "title": "Coolors: Free Color Palette Generator & Theory",
+    "description": "Generate beautiful, accessible, harmonious color palettes for UI projects instantly. Covers color theory fundamentals — hue, saturation, lightness, complementary colors, triadic schemes, analogous palettes, WCAG contrast ratios (AA/AAA), and creating dark mode color systems.",
+    "category": "UI/UX Design",
+    "resourceType": "Interactive Tool",
+    "url": "https://coolors.co/",
+    "thumbnail": "https://images.unsplash.com/photo-1505739818593-1c3d5b1b5bf8?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "color",
+      "palette",
+      "design",
+      "ui",
+      "wcag",
+      "accessibility",
+      "dark mode"
+    ],
+    "difficulty": "Beginner",
+    "isFeatured": false
+  },
+  {
+    "title": "Automate the Boring Stuff with Python – Free Book",
+    "description": "Practical programming for total beginners. Learn to write Python scripts that automate file operations, scrape websites with BeautifulSoup, read/write Excel/CSV/PDF files, schedule tasks with cron, send email notifications, control the keyboard/mouse with PyAutoGUI.",
+    "category": "Python",
+    "resourceType": "Book",
+    "url": "https://automatetheboringstuff.com/",
+    "thumbnail": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "python",
+      "automation",
+      "beginners",
+      "web scraping",
+      "files",
+      "scripts"
+    ],
+    "difficulty": "Beginner",
+    "isFeatured": true
+  },
+  {
+    "title": "Python.org Official Tutorial – Complete Reference",
+    "description": "The official Python tutorial covering data types, control flow, functions, modules, I/O, exception handling, class-based OOP, iterators, generators, the standard library, virtual environments, packaging with pip, and the Python Package Index (PyPI).",
+    "category": "Python",
+    "resourceType": "Documentation",
+    "url": "https://docs.python.org/3/tutorial/",
+    "thumbnail": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "python",
+      "official",
+      "tutorial",
+      "classes",
+      "generators",
+      "stdlib",
+      "pip"
+    ],
+    "difficulty": "Beginner",
+    "isFeatured": false
+  },
+  {
+    "title": "Real Python – Tutorials, Courses & In-Depth Articles",
+    "description": "Real Python offers high-quality tutorials and articles covering web development with Django and Flask, data science with pandas and NumPy, Python packaging, testing with pytest, decorators, context managers, async Python with asyncio, and career development guidance.",
+    "category": "Python",
+    "resourceType": "Article",
+    "url": "https://realpython.com/",
+    "thumbnail": "https://images.unsplash.com/photo-1483366774565-c783b9f70e2c?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "python",
+      "django",
+      "flask",
+      "pandas",
+      "testing",
+      "decorators",
+      "async"
+    ],
+    "difficulty": "Intermediate",
+    "isFeatured": false
+  },
+  {
+    "title": "Python Data Science Handbook – Free Online",
+    "description": "Jake VanderPlas's comprehensive guide to Python's data science ecosystem. Covers NumPy array operations, pandas DataFrames, Matplotlib and Seaborn visualization, and Scikit-Learn machine learning pipelines. Essential reading for data analysis and ML engineers.",
+    "category": "Python",
+    "resourceType": "Book",
+    "url": "https://jakevdp.github.io/PythonDataScienceHandbook/",
+    "thumbnail": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "python",
+      "data science",
+      "numpy",
+      "pandas",
+      "matplotlib",
+      "machine learning"
+    ],
+    "difficulty": "Intermediate",
+    "isFeatured": false
+  },
+  {
+    "title": "FastAPI Official Documentation – Fast Python REST APIs",
+    "description": "Build blazing-fast Python REST APIs with FastAPI, Pydantic v2, and Uvicorn. Covers path parameters, query params, request body validation, async endpoints, dependency injection, OAuth2 JWT authentication, automatic OpenAPI documentation, and Docker deployment.",
+    "category": "Python",
+    "resourceType": "Documentation",
+    "url": "https://fastapi.tiangolo.com/",
+    "thumbnail": "https://images.unsplash.com/photo-1452457750107-be084b4f04af?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "fastapi",
+      "python",
+      "rest api",
+      "async",
+      "pydantic",
+      "openapi",
+      "docker"
+    ],
+    "difficulty": "Intermediate",
+    "isFeatured": true
+  },
+  {
+    "title": "Codecademy: Learn Java – Interactive Coding Course",
+    "description": "An interactive Java course designed for complete beginners. Covers printing, variables, data types, conditionals, loops, arrays, ArrayLists, OOP classes and objects, inheritance, polymorphism, encapsulation, generics, and the Java Collections Framework with hands-on exercises.",
+    "category": "Java",
+    "resourceType": "Interactive Tool",
+    "url": "https://www.codecademy.com/learn/learn-java",
+    "thumbnail": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "java",
+      "interactive",
+      "codecademy",
+      "oop",
+      "collections",
+      "beginner"
+    ],
+    "difficulty": "Beginner",
+    "isFeatured": false
+  },
+  {
+    "title": "Spring Boot Official Guides – Java Backend Framework",
+    "description": "Official Spring Boot documentation and step-by-step guides covering dependency injection (IoC), auto-configuration, RESTful APIs, Spring Data JPA with Hibernate, Spring Security, OAuth2 with JWT, testing with JUnit 5 and Mockito, Actuator monitoring, and Docker deployment.",
+    "category": "Java",
+    "resourceType": "Documentation",
+    "url": "https://spring.io/guides",
+    "thumbnail": "https://images.unsplash.com/photo-1647166545674-ce28ce93bdca?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "spring boot",
+      "java",
+      "rest api",
+      "jpa",
+      "spring security",
+      "backend",
+      "docker"
+    ],
+    "difficulty": "Intermediate",
+    "isFeatured": true
+  },
+  {
+    "title": "Effective Java – Joshua Bloch (Book)",
+    "description": "Timeless best practices and idioms for Java development by Joshua Bloch. Item-by-item advice on creating and destroying objects, methods common to all objects, classes and interfaces, generics, enums, lambdas, streams, concurrency, and writing maintainable robust Java code.",
+    "category": "Java",
+    "resourceType": "Book",
+    "url": "https://www.oreilly.com/library/view/effective-java/9780134686097/",
+    "thumbnail": "https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "java",
+      "best practices",
+      "advanced",
+      "generics",
+      "concurrency",
+      "lambdas"
+    ],
+    "difficulty": "Advanced",
+    "isFeatured": false
+  },
+  {
+    "title": "Java Multithreading & Concurrency – Deep Dive Course",
+    "description": "A deep dive into Java concurrency — threads, Runnable, Callable, thread pools, ExecutorService, synchronized blocks, ReentrantLock, atomic variables, concurrent collections (ConcurrentHashMap, BlockingQueue), CompletableFuture, Fork/Join framework, and Java 21 virtual threads.",
+    "category": "Java",
+    "resourceType": "Video",
+    "url": "https://www.youtube.com/watch?v=WldMTtUWqTg",
+    "thumbnail": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "java",
+      "multithreading",
+      "concurrency",
+      "executor",
+      "locks",
+      "completablefuture"
+    ],
+    "difficulty": "Advanced",
+    "isFeatured": false
+  },
+  {
+    "title": "LeetCode – Java Interview Problem Practice",
+    "description": "Practice thousands of coding problems in Java on LeetCode. Covers arrays, strings, linked lists, trees, graphs, dynamic programming, backtracking, bit manipulation, and system design — all essential for Java backend developer interviews at top tech companies.",
+    "category": "Java",
+    "resourceType": "Interactive Tool",
+    "url": "https://leetcode.com/problemset/all/",
+    "thumbnail": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "java",
+      "leetcode",
+      "interviews",
+      "dsa",
+      "arrays",
+      "problem solving"
+    ],
+    "difficulty": "Intermediate",
+    "isFeatured": false
+  },
+  {
+    "title": "Striver's A2Z DSA Sheet – Complete 455 Problem Roadmap",
+    "description": "Striver's widely-used A-to-Z DSA roadmap with 455 problems organized by topic with full video solutions. Covers arrays, strings, maths, recursion, sorting algorithms, binary search, linked lists, stacks, queues, trees, heaps, graphs, DP, tries, and bit manipulation.",
+    "category": "Data Structures and Algorithms",
+    "resourceType": "Cheatsheet",
+    "url": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/",
+    "thumbnail": "https://images.unsplash.com/photo-1605379399843-5870eea9b74e?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "dsa",
+      "striver",
+      "a2z",
+      "competitive",
+      "arrays",
+      "dp",
+      "graphs"
+    ],
+    "difficulty": "All Levels",
+    "isFeatured": true
+  },
+  {
+    "title": "VisuAlgo – Visualizing Data Structures & Algorithms",
+    "description": "Free interactive website visualizing data structures and algorithms through step-by-step animation. Covers all sorting algorithms, linked lists, binary heaps, BST, AVL tree, segment tree, graph algorithms (BFS, DFS, Dijkstra, Kruskal, Floyd-Warshall), and network flow.",
+    "category": "Data Structures and Algorithms",
+    "resourceType": "Interactive Tool",
+    "url": "https://visualgo.net/",
+    "thumbnail": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "dsa",
+      "visualization",
+      "sorting",
+      "graphs",
+      "trees",
+      "interactive",
+      "bfs"
+    ],
+    "difficulty": "All Levels",
+    "isFeatured": true
+  },
+  {
+    "title": "MIT OpenCourseWare: Introduction to Algorithms (6.006)",
+    "description": "MIT's lecture series based on the legendary CLRS textbook. Covers divide and conquer, dynamic programming, greedy algorithms, graph algorithms (BFS, DFS, Bellman-Ford, Dijkstra), amortized analysis, NP-completeness, and advanced data structures like Fibonacci heaps.",
+    "category": "Data Structures and Algorithms",
+    "resourceType": "Course",
+    "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/",
+    "thumbnail": "https://images.unsplash.com/photo-1582719188393-bb71ca45dbb9?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "algorithms",
+      "mit",
+      "clrs",
+      "dynamic programming",
+      "graphs",
+      "advanced"
+    ],
+    "difficulty": "Advanced",
+    "isFeatured": false
+  },
+  {
+    "title": "Grokking the Coding Interview – LeetCode Patterns",
+    "description": "Learn the 14 universal coding interview patterns — sliding window, two pointers, fast and slow pointers, merge intervals, cyclic sort, tree BFS, tree DFS, two heaps, subsets, modified binary search, bitwise XOR, top K elements, topological sort, and dynamic programming.",
+    "category": "Data Structures and Algorithms",
+    "resourceType": "Course",
+    "url": "https://www.designgurus.io/course/grokking-the-coding-interview",
+    "thumbnail": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "dsa",
+      "patterns",
+      "interviews",
+      "sliding window",
+      "two pointers",
+      "bfs",
+      "dp"
+    ],
+    "difficulty": "Intermediate",
+    "isFeatured": false
+  },
+  {
+    "title": "Big-O Cheatsheet – Algorithm Complexity Reference",
+    "description": "The definitive Big-O complexity cheatsheet covering time and space complexity for all major data structures (arrays, stacks, queues, linked lists, hash tables, trees, graphs) and sorting algorithms (quicksort, mergesort, heapsort, timsort) — essential for every interview.",
+    "category": "Data Structures and Algorithms",
+    "resourceType": "Cheatsheet",
+    "url": "https://www.bigocheatsheet.com/",
+    "thumbnail": "https://images.unsplash.com/photo-1485796826113-174aa68fd81b?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "big-o",
+      "complexity",
+      "cheatsheet",
+      "dsa",
+      "sorting",
+      "time complexity"
+    ],
+    "difficulty": "All Levels",
+    "isFeatured": false
+  },
+  {
+    "title": "Dave Gray: Node.js & Express Full Course for Beginners",
+    "description": "Complete 8-hour hands-on course covering Node.js modules, file system, EventEmitter, Express server architecture, middleware, routing, CORS, MVC pattern, MongoDB integration with Mongoose, and JWT authentication.",
+    "category": "Node.js and Express",
+    "resourceType": "Course",
+    "url": "https://www.youtube.com/watch?v=f2EqECiTBL8",
+    "thumbnail": "https://images.unsplash.com/photo-1627398242454-45a1465c2479?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "nodejs",
+      "express",
+      "course",
+      "backend",
+      "rest api",
+      "jwt",
+      "mvc"
+    ],
+    "difficulty": "Beginner",
+    "isFeatured": true
+  },
+  {
+    "title": "Traversy Media: Node.js & Express REST API Masterclass",
+    "description": "Learn how to build production-ready RESTful APIs using Node.js, Express, and MongoDB. Includes error handling middleware, async/await handlers, aggregation, geoJSON queries, user authentication, and API security headers.",
+    "category": "Node.js and Express",
+    "resourceType": "Course",
+    "url": "https://www.youtube.com/watch?v=-MTSQjw5DrM",
+    "thumbnail": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "nodejs",
+      "express",
+      "course",
+      "backend",
+      "traversy",
+      "mongodb"
+    ],
+    "difficulty": "Intermediate",
+    "isFeatured": false
+  },
+  {
+    "title": "Programming with Mosh: Python Tutorial for Beginners",
+    "description": "A 6-hour complete Python course covering variables, strings, arithmetic operations, if statements, while loops, for loops, lists, tuples, dictionaries, functions, exceptions, classes, packages, and building machine learning models.",
+    "category": "Python",
+    "resourceType": "Video",
+    "url": "https://www.youtube.com/watch?v=_uQrJ0TkZlc",
+    "thumbnail": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "python",
+      "video",
+      "mosh",
+      "beginner",
+      "programming",
+      "youtube"
+    ],
+    "difficulty": "Beginner",
+    "isFeatured": true
+  },
+  {
+    "title": "Learn to Code HTML & CSS by Shay Howe",
+    "description": "A comprehensive free online book that teaches beginners how to build modern, standards-compliant websites with HTML and CSS. Covers semantics, typography, the box model, responsive web design, forms, tables, and CSS transforms.",
+    "category": "HTML and CSS",
+    "resourceType": "Book",
+    "url": "https://learn.shayhowe.com/html-css/",
+    "thumbnail": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "html",
+      "css",
+      "book",
+      "shay howe",
+      "beginner",
+      "web design"
+    ],
+    "difficulty": "Beginner",
+    "isFeatured": true
+  },
+  {
+    "title": "The Net Ninja: Complete React & Redux Tutorial Playlist",
+    "description": "Step-by-step masterclass covering React components, templates, props, state, useState, useEffect, React Router, fetching data with custom hooks, forms, context API, and deployment on Vercel.",
+    "category": "React JS",
+    "resourceType": "Video",
+    "url": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d",
+    "thumbnail": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "react",
+      "video",
+      "net ninja",
+      "hooks",
+      "router",
+      "beginner",
+      "youtube"
+    ],
+    "difficulty": "Beginner",
+    "isFeatured": true
+  },
+  {
+    "title": "NeetCode: System Design for Coding Interviews Course",
+    "description": "Clear, concise course covering key distributed system components: Load Balancers, API Gateways, Caching, Databases (SQL vs NoSQL), Queues, Pub/Sub, CDN, Horizontal Scaling, and Rate Limiting with real interview problem breakdowns.",
+    "category": "Interview Preparation",
+    "resourceType": "Course",
+    "url": "https://neetcode.io/courses/system-design/0",
+    "thumbnail": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "interview",
+      "system design",
+      "course",
+      "neetcode",
+      "scalability",
+      "faang"
+    ],
+    "difficulty": "Intermediate",
+    "isFeatured": true
+  },
+  {
+    "title": "Abdul Bari: Algorithms & Complexity Analysis Lecture Series",
+    "description": "Renowned computer science lectures covering asymptotic notations, divide and conquer, greedy methods, dynamic programming, 0/1 knapsack, Dijkstra, Floyd-Warshall, and backtracking with intuitive whiteboard explanations.",
+    "category": "Data Structures and Algorithms",
+    "resourceType": "Video",
+    "url": "https://www.youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O",
+    "thumbnail": "https://images.unsplash.com/photo-1582719188393-bb71ca45dbb9?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "dsa",
+      "algorithms",
+      "video",
+      "abdul bari",
+      "dynamic programming",
+      "complexity"
+    ],
+    "difficulty": "Intermediate",
+    "isFeatured": true
+  },
+  {
+    "title": "Grokking Algorithms: An Illustrated Guide (Aditya Bhargava)",
+    "description": "A fully illustrated, friendly guide that teaches you how to apply common algorithms to practical programming problems. Covers binary search, recursion, quicksort, hash tables, breadth-first search, Dijkstra’s algorithm, greedy algorithms, and dynamic programming.",
+    "category": "Data Structures and Algorithms",
+    "resourceType": "Book",
+    "url": "https://www.manning.com/books/grokking-algorithms",
+    "thumbnail": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "dsa",
+      "algorithms",
+      "book",
+      "illustrated",
+      "beginner",
+      "binary search",
+      "dp"
+    ],
+    "difficulty": "Beginner",
+    "isFeatured": true
+  }
 ];
