@@ -34,14 +34,19 @@ export const protect = async (req, res, next) => {
         if (demoUser) {
           user = { ...demoUser };
         } else if (typeof decoded.id === 'string' && decoded.id.startsWith('seed_')) {
-          user = decoded.id.includes('admin') ? DEMO_USERS[0] : DEMO_USERS[1];
-        } else if (typeof decoded.id === 'string' && decoded.id.startsWith('guest_')) {
+          user = decoded.id.includes('admin') ? DEMO_USERS[0] : DEMO_USERS[2];
+        } else if (
+          typeof decoded.id === 'string' &&
+          (decoded.id.startsWith('guest_') || decoded.id.startsWith('user_'))
+        ) {
+          const isPrabhu = decoded.id.includes('prabhu');
+          const isAdmin = isPrabhu || decoded.id.includes('admin');
           user = {
             _id: decoded.id,
-            name: 'SkillNest Learner',
-            email: 'learner@skillnest.org',
-            role: 'user',
-            profileImage: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=250&q=80',
+            name: isPrabhu ? 'Prabhu' : 'SkillNest Member',
+            email: isPrabhu ? 'prabhu12345@gmail.com' : 'learner@skillnest.org',
+            role: isAdmin ? 'admin' : 'user',
+            profileImage: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=250&q=80',
           };
         }
       }

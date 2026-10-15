@@ -142,6 +142,13 @@ export default function LoginPage() {
           <p className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider text-center">
             One-Click Demo Accounts
           </p>
+          <button
+            type="button"
+            onClick={() => handleFillDemo('prabhu12345@gmail.com', '123456789p')}
+            className="w-full px-3 py-2 rounded-lg bg-gradient-to-r from-violet-600/30 to-brand-blue/30 hover:from-violet-600/50 hover:to-brand-blue/50 border border-brand-cyan/40 text-xs text-white font-medium flex items-center justify-center gap-1.5 transition-all shadow-sm"
+          >
+            ⭐ Prabhu (Platform Admin)
+          </button>
           <div className="grid grid-cols-2 gap-2 pt-1">
             <button
               type="button"
