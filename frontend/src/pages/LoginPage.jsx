@@ -40,10 +40,20 @@ export default function LoginPage() {
     }
   };
 
-  const handleFillDemo = (demoEmail, demoPass) => {
+  const handleFillDemo = async (demoEmail, demoPass) => {
     setEmail(demoEmail);
     setPassword(demoPass);
     setErrorMsg('');
+    setLoading(true);
+    try {
+      await login(demoEmail, demoPass);
+      addToast('Welcome back to SkillNest!', 'success');
+      navigate(redirectPath, { replace: true });
+    } catch (err) {
+      setErrorMsg(err.response?.data?.message || err.message || 'Invalid credentials.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
